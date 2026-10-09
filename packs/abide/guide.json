@@ -1,0 +1,434 @@
+{
+  "164.308(a)(1)(i)": {
+    "o": "The duty to find the risks to patient data you hold, and to do something about them. Everything else in the Security Rule hangs off this one.",
+    "a": "Run a risk analysis, act on what it finds, discipline staff who break the rules, and review your system activity. The four specifications under this standard are all required.",
+    "e": "OCR routinely asks for this early in an investigation. They look for a current risk analysis and evidence that findings were actually addressed, not filed.",
+    "r": "Risk analysis report; risk treatment plan with owners and dates; sanction policy; activity review records."
+  },
+  "164.308(a)(1)(ii)(A)": {
+    "o": "A written assessment of where electronic patient data lives, what could go wrong with it, and how likely and how bad that would be.",
+    "a": "Required. List every system, device and service that creates, receives, stores or transmits ePHI - including laptops, phones, backups and anything a vendor hosts. Work through the threats to each, record likelihood and impact, and keep it current as things change.",
+    "e": "One of the failures OCR cites most often in its settlements. They check it covers the whole environment, not just the EHR, and that it has been revisited since it was first written.",
+    "r": "Current risk analysis covering every system in the asset register; the date it was last reviewed; the previous version, to show it is maintained."
+  },
+  "164.308(a)(1)(ii)(B)": {
+    "o": "Actually reducing the risks the analysis found, to a level you have decided is acceptable.",
+    "a": "Required. Turn each significant finding into a piece of work with an owner and a date. Track it to done. Where you accept a risk instead, say who accepted it and why.",
+    "e": "Findings with no owner, no date and no progress. A risk analysis with nothing behind it is treated as no risk analysis at all.",
+    "r": "Risk treatment plan; closed items with evidence; accepted risks signed off by name."
+  },
+  "164.308(a)(1)(ii)(C)": {
+    "o": "Written consequences for workforce members who break your security rules.",
+    "a": "Required. Write what happens, from a warning to dismissal, make it part of the staff handbook, and apply it when it happens. Keep a record of the times you did.",
+    "e": "That the policy exists, that staff were told about it, and that it was used - snooping cases with no consequence are noticed.",
+    "r": "Sanction policy; signed acknowledgements; records of action taken, with names redacted if you prefer."
+  },
+  "164.308(a)(1)(ii)(D)": {
+    "o": "Someone regularly looking at your logs, access reports and security incident tracking.",
+    "a": "Required. Decide what gets reviewed, how often and by whom - failed sign-ins, access to VIP records, after-hours activity. Do it on that schedule and write down what you saw and what you did about it.",
+    "e": "Evidence of a review happening, not just logs existing. A log nobody reads is a finding.",
+    "r": "Review schedule; dated review notes; follow-up actions raised from them."
+  },
+  "164.308(a)(2)": {
+    "o": "One named person accountable for security. Not a committee, not a job title nobody holds.",
+    "a": "Name your Security Official in writing, make sure they know it, and say so where staff can see it. A small practice can name the office manager; the point is that someone owns it.",
+    "e": "A name, a date, and a person who still works here and knows they hold the role. An appointment that outlived the person's employment is an easy finding.",
+    "r": "Written appointment; the name in your policies; the person's job description."
+  },
+  "164.308(a)(3)(i)": {
+    "o": "Making sure the right staff have access to patient data, and that everybody else does not.",
+    "a": "Decide who needs access to what before you grant it, check people before you give it, and remove it the day they leave.",
+    "e": "Leavers who still have accounts. It is quick to test and often finds something.",
+    "r": "Access approval records; screening records; a leavers list matched against account removals."
+  },
+  "164.308(a)(3)(ii)(A)": {
+    "o": "Staff who can reach patient data are either authorised to do so or supervised while they do.",
+    "a": "Addressable - do this, or something else that achieves the same thing, or write down why neither is reasonable for you. Have a manager approve access before IT grants it. For students, volunteers and temporary staff, say who supervises them.",
+    "e": "Access granted on a verbal request, with no record of who approved it.",
+    "r": "Approval records naming the approver; supervision arrangements for trainees."
+  },
+  "164.308(a)(3)(ii)(B)": {
+    "o": "Checking that someone is suitable before you give them access to patient data.",
+    "a": "Addressable - do this, or something else that achieves the same thing, or write down why neither is reasonable for you. Decide what you check for which roles - identity, references, licence verification, background checks where your state allows - and do it before access is granted, not after.",
+    "e": "That the check happened before the access, and that it is applied consistently rather than to some people only.",
+    "r": "Screening policy; completed checks on file; dates showing they preceded access."
+  },
+  "164.308(a)(3)(ii)(C)": {
+    "o": "Cutting off access when someone leaves or changes job.",
+    "a": "Addressable - do this, or something else that achieves the same thing, or write down why neither is reasonable for you. Make a checklist: disable accounts, collect the laptop and badge, change any shared passwords they knew, remove remote access. Trigger it from HR the same day, and do the same for a transfer, not only a leaver.",
+    "e": "The gap between the leaving date and the account being disabled. Same-day is expected for a dismissal.",
+    "r": "Leaver checklist per person; account disable timestamps; asset return records."
+  },
+  "164.308(a)(4)(i)": {
+    "o": "Rules for who gets access to what, written down, and followed every time access is granted or changed.",
+    "a": "Define access by role. Grant the least a person needs to do their job. Review it periodically and when someone changes role.",
+    "e": "Everyone having the same broad access because it was easier, especially clinical staff able to see every patient in the system.",
+    "r": "Role-to-access matrix; approval records; periodic access review results."
+  },
+  "164.308(a)(4)(ii)(A)": {
+    "o": "If a clearinghouse is part of a larger organisation, it must keep its data away from the rest of the business.",
+    "a": "Required. If this applies, separate the clearinghouse systems and access from the parent organisation. If you are not a clearinghouse, record that this does not apply and why.",
+    "e": "Either the separation, or a clear statement that the organisation performs no clearinghouse function.",
+    "r": "Network and access separation evidence, or a documented not-applicable decision."
+  },
+  "164.308(a)(4)(ii)(B)": {
+    "o": "How access to patient data gets approved in the first place.",
+    "a": "Addressable - do this, or something else that achieves the same thing, or write down why neither is reasonable for you. Write down who may approve access to each system, and make the request go through them. Keep the approvals.",
+    "e": "Who approved this person's access to this system, and when. Have the record ready.",
+    "r": "Access request and approval records, per person and per system."
+  },
+  "164.308(a)(4)(ii)(C)": {
+    "o": "How access is set up, changed and reviewed over time.",
+    "a": "Addressable - do this, or something else that achieves the same thing, or write down why neither is reasonable for you. Review who has access to what at a set interval - quarterly is common - and when people change role. Remove what is no longer needed and record the decision.",
+    "e": "Accumulated access: the nurse who moved to billing and kept both. A review with no removals is treated as a review that did not happen.",
+    "r": "Dated access review records showing what was removed and by whom."
+  },
+  "164.308(a)(5)(i)": {
+    "o": "A security awareness and training programme for everyone in the workforce, including management.",
+    "a": "Train new starters before they get access and everybody periodically after that. Cover phishing, passwords, reporting, and handling records. Keep attendance records.",
+    "e": "Who was trained, on what, and when. Missing records for managers and clinicians are common.",
+    "r": "Training content; attendance or completion records per person; the dates."
+  },
+  "164.308(a)(5)(ii)(A)": {
+    "o": "Periodic nudges between formal training sessions.",
+    "a": "Addressable - do this, or something else that achieves the same thing, or write down why neither is reasonable for you. Send something regularly: a note about a current scam, a poster, a screen message, a short item in the team meeting. Keep a copy of what you sent and when.",
+    "e": "That anything at all happens between annual training rounds.",
+    "r": "Copies of reminders with dates sent."
+  },
+  "164.308(a)(5)(ii)(B)": {
+    "o": "Guarding against, detecting and reporting malicious software - and teaching staff their part in it.",
+    "a": "Addressable - do this, or something else that achieves the same thing, or write down why neither is reasonable for you. Run endpoint protection on everything, keep it updated, and make sure staff know how to report a machine behaving oddly rather than carrying on.",
+    "e": "Coverage gaps: the machine in the back office nobody manages, or protection installed but not reporting for months.",
+    "r": "Endpoint protection console showing every device; update status; staff guidance on reporting."
+  },
+  "164.308(a)(5)(ii)(C)": {
+    "o": "Watching for sign-in attempts that fail, and telling people about them.",
+    "a": "Addressable - do this, or something else that achieves the same thing, or write down why neither is reasonable for you. Turn on alerting for repeated failures and unusual sign-ins. Decide who looks and what they do about it.",
+    "e": "Whether anyone would notice a password-guessing attempt against your remote access.",
+    "r": "Alert configuration; examples of alerts reviewed and the outcome."
+  },
+  "164.308(a)(5)(ii)(D)": {
+    "o": "How passwords are created, changed and protected.",
+    "a": "Addressable - do this, or something else that achieves the same thing, or write down why neither is reasonable for you. Set a standard - long passphrases, no sharing, a password manager, multi-factor authentication on anything reachable from outside. Say it in a policy and enforce it in the systems that allow it.",
+    "e": "Shared logins at a nursing station or front desk. They break every other control you have, because nothing can be traced to a person.",
+    "r": "Password policy; system settings showing it is enforced; MFA coverage."
+  },
+  "164.308(a)(6)(i)": {
+    "o": "A plan for handling security incidents - and every incident is one, whether or not it turns out to be a breach.",
+    "a": "Write down how an incident is reported, who decides what it is, who investigates, and how it is closed. Make sure staff know the reporting route.",
+    "e": "An incident log that is empty. It reads as nobody reporting, not as nothing happening.",
+    "r": "Incident procedure; incident log with dates, actions and outcomes."
+  },
+  "164.308(a)(6)(ii)": {
+    "o": "Responding to suspected or known incidents, limiting the damage, and recording what happened.",
+    "a": "Required. For each incident: contain it, work out what data was involved, run the breach risk assessment, fix the cause, and write it up. Link it to the notification rules if it is a breach.",
+    "e": "The gap between discovery and action, and whether the breach assessment was done at all.",
+    "r": "Incident records showing discovery date, actions, outcome, and the breach decision with reasons."
+  },
+  "164.308(a)(7)(i)": {
+    "o": "What you do when fire, flood, ransomware or a failed server takes your systems away.",
+    "a": "Write the plan, back the data up, know how to restore it, and know how you will treat patients while the system is down.",
+    "e": "Backups that exist but have never been restored. Ransomware cases turn on this.",
+    "r": "Contingency plan; backup records; restore test results; downtime procedures."
+  },
+  "164.308(a)(7)(ii)(A)": {
+    "o": "Keeping retrievable, exact copies of electronic patient data.",
+    "a": "Required. Back up everything that holds ePHI, on a schedule that matches how much you could afford to lose. Keep a copy off-site or offline, so ransomware cannot reach it.",
+    "e": "What is backed up, how often, where the copy lives, and whether anything is missed.",
+    "r": "Backup schedule and scope; successful backup reports; evidence of an offline or immutable copy."
+  },
+  "164.308(a)(7)(ii)(B)": {
+    "o": "How you restore lost data and systems after something serious.",
+    "a": "Required. Write the steps to rebuild each critical system and restore its data, with the order to do them in and who does what. Include the phone numbers you would need.",
+    "e": "A plan specific enough to follow at 2 a.m. under pressure, not a page of intentions.",
+    "r": "Disaster recovery plan with system-by-system steps; contact list; last review date."
+  },
+  "164.308(a)(7)(ii)(C)": {
+    "o": "Carrying on protecting patient data while running in an emergency.",
+    "a": "Required. Say how care continues when systems are down - paper forms, a read-only copy of records, break-glass access - and how those records are kept safe and entered later.",
+    "e": "Downtime procedures that abandon security: paper notes left on a desk, or a shared emergency login with no record of who used it.",
+    "r": "Downtime procedures; break-glass account controls and usage records; how paper records are secured and reconciled."
+  },
+  "164.308(a)(7)(ii)(D)": {
+    "o": "Testing the contingency plan, and fixing what the test shows.",
+    "a": "Addressable - do this, or something else that achieves the same thing, or write down why neither is reasonable for you. Test at least once a year. A tabletop walkthrough counts; an actual restore of a real backup counts for more. Write down what failed and change the plan.",
+    "e": "A plan that has never been tested, or tests that always pass and never change anything.",
+    "r": "Test records with date, participants, what went wrong, and the resulting plan changes."
+  },
+  "164.308(a)(7)(ii)(E)": {
+    "o": "Knowing which systems matter most, so you restore them in the right order.",
+    "a": "Addressable - do this, or something else that achieves the same thing, or write down why neither is reasonable for you. Rank your systems by how long you could function without them. Use that order in the recovery plan.",
+    "e": "Whether the recovery order matches clinical reality rather than IT convenience.",
+    "r": "Criticality ranking of applications; recovery order in the plan reflecting it."
+  },
+  "164.308(a)(8)": {
+    "o": "Periodically checking whether your safeguards still meet the Security Rule, and redoing it when things change.",
+    "a": "Review your safeguards at least yearly, and after any significant change - a new EHR, a merger, a move to the cloud. Record what you found and fix the gaps.",
+    "e": "Evaluations that stopped after the first year, or that never happened after a major system change.",
+    "r": "Dated evaluation reports; findings with owners; evidence gaps were closed."
+  },
+  "164.308(b)(1)": {
+    "o": "You may only let a vendor handle patient data if they have promised, in a contract, to protect it.",
+    "a": "Keep a list of every vendor that touches ePHI - billing, IT support, cloud storage, shredding, transcription. Get a signed business associate agreement before they start, and keep it.",
+    "e": "The vendor list against the signed agreements. Missing BAAs are a common and expensive finding.",
+    "r": "Vendor register; signed BAAs with dates; evidence the agreement predates the access."
+  },
+  "164.308(b)(3)": {
+    "o": "The agreement itself, meeting what 164.314(a) requires it to say.",
+    "a": "Required. Use an agreement that covers what 164.314(a) requires - safeguards, subcontractors, and incident reporting to you - plus the terms the Privacy Rule requires in 164.504(e), such as what happens to the data when the contract ends. Do not accept a vendor's silence on any of them.",
+    "e": "Agreements that are only a confidentiality clause, with no security obligations and no breach reporting timescale.",
+    "r": "Executed BAAs containing the required terms; a register of when each was last reviewed."
+  },
+  "164.310(a)(1)": {
+    "o": "Limiting who can physically get to the rooms and equipment holding patient data.",
+    "a": "Lock the server room and the wiring cupboard. Control who holds keys and badges. Know who was in the building, and escort visitors who go anywhere near the equipment.",
+    "e": "Server equipment in an unlocked room, a cupboard everyone has a key to, or a comms rack in a public corridor.",
+    "r": "Key and badge register; door access logs; visitor log; photographs of how equipment is secured."
+  },
+  "164.310(a)(2)(i)": {
+    "o": "Getting into the building to restore data after an emergency, without letting everyone else in.",
+    "a": "Addressable - do this, or something else that achieves the same thing, or write down why neither is reasonable for you. Say who may enter during an emergency, how they get in if the badge system is down, and how that entry is recorded.",
+    "e": "An emergency plan that assumes the doors work and the usual people are available.",
+    "r": "Emergency access procedure; named holders of override keys; records of emergency entry."
+  },
+  "164.310(a)(2)(ii)": {
+    "o": "A written plan for protecting the building and its equipment from unauthorised physical access, tampering and theft.",
+    "a": "Addressable - do this, or something else that achieves the same thing, or write down why neither is reasonable for you. Write down what protects each area - locks, alarms, cameras, reception - and who is responsible for each.",
+    "e": "Whether the plan matches what is actually installed, especially after a move or refit.",
+    "r": "Facility security plan; alarm and camera coverage; maintenance records for them."
+  },
+  "164.310(a)(2)(iii)": {
+    "o": "Checking that a person is who they say they are before letting them into sensitive areas, including engineers and contractors.",
+    "a": "Addressable - do this, or something else that achieves the same thing, or write down why neither is reasonable for you. Verify identity at reception, issue visitor badges, escort contractors in equipment rooms, and check that an engineer was actually sent by the company they claim.",
+    "e": "Contractors with unescorted access, and visitor logs with gaps.",
+    "r": "Visitor and contractor procedures; sign-in records; escort arrangements."
+  },
+  "164.310(a)(2)(iv)": {
+    "o": "A record of repairs and changes to the physical security of the building - locks, doors, walls, alarms.",
+    "a": "Addressable - do this, or something else that achieves the same thing, or write down why neither is reasonable for you. Log it when a lock is changed, a door is repaired, or an alarm is serviced. Note what, when and who did it.",
+    "e": "Changes to physical security nobody can account for.",
+    "r": "Maintenance log covering locks, doors, alarms and cameras."
+  },
+  "164.310(b)": {
+    "o": "Rules for how workstations that can reach patient data are used, and what a proper environment for them looks like.",
+    "a": "Say what staff may and may not do on a clinical workstation, including at home: no personal email for patient data, lock the screen when you walk away, no family members using it.",
+    "e": "Home working arrangements with no rules written for them.",
+    "r": "Workstation use policy; acknowledgement by staff; remote working rules."
+  },
+  "164.310(c)": {
+    "o": "Physically protecting the workstations themselves from people who should not use them.",
+    "a": "Angle screens away from waiting areas, use privacy filters at reception, lock laptops to desks or lock them away, and set screens to lock quickly when idle.",
+    "e": "Reception and nursing-station screens visible to patients. It is one of the first things anyone walking through will notice.",
+    "r": "Screen positions and privacy filters; automatic lock settings; laptop security arrangements."
+  },
+  "164.310(d)(1)": {
+    "o": "Controlling the hardware and media holding patient data as it moves in, around and out of your organisation.",
+    "a": "Keep a register of devices and removable media. Control how they leave the building, and how they are wiped or destroyed at the end.",
+    "e": "Devices that went to disposal with no record of how the data on them was destroyed.",
+    "r": "Device register; movement records; disposal certificates."
+  },
+  "164.310(d)(2)(i)": {
+    "o": "Getting rid of patient data, and the hardware it was on, so it cannot be recovered.",
+    "a": "Required. Wipe or physically destroy drives before anything leaves. Use a service that gives you a certificate listing serial numbers. Do not sell or donate equipment without it.",
+    "e": "The certificate against the device register. Photocopiers and MFPs are the classic miss - they have hard drives.",
+    "r": "Destruction or wipe certificates with serial numbers; the register entry closed off."
+  },
+  "164.310(d)(2)(ii)": {
+    "o": "Removing patient data from media before it is used for something else.",
+    "a": "Required. Wipe a device before it is handed to another member of staff or another department. A quick delete or a reformat is not enough on its own.",
+    "e": "Machines passed between staff with the previous user's data still on them.",
+    "r": "Wipe records tied to device and date; the standard you wipe to."
+  },
+  "164.310(d)(2)(iii)": {
+    "o": "Knowing where the hardware and media went, and who had it.",
+    "a": "Addressable - do this, or something else that achieves the same thing, or write down why neither is reasonable for you. Record moves of equipment holding ePHI: who took it, when, and where to. Include laptops taken home and drives sent off site.",
+    "e": "A device register that has not been checked against reality for years.",
+    "r": "Movement log; periodic inventory check with discrepancies chased."
+  },
+  "164.310(d)(2)(iv)": {
+    "o": "Making a copy of patient data before you move equipment that holds it.",
+    "a": "Addressable - do this, or something else that achieves the same thing, or write down why neither is reasonable for you. Back up a device before it is moved, upgraded or repaired, so a failure in transit does not lose the only copy.",
+    "e": "Equipment moved or sent for repair with no copy taken first.",
+    "r": "Backup taken and verified before the move, noted against the device."
+  },
+  "164.312(a)(1)": {
+    "o": "Technical controls that let only authorised people and software reach patient data.",
+    "a": "Give everyone their own account, restrict what each role can open, and make sure the system enforces it rather than relying on people behaving.",
+    "e": "Shared accounts, and staff able to open records well beyond their role.",
+    "r": "User list with roles; system permission settings; evidence no shared accounts remain."
+  },
+  "164.312(a)(2)(i)": {
+    "o": "Every user has their own name and number, so activity can be traced to a person.",
+    "a": "Required. One account per person, everywhere. Remove generic accounts like 'frontdesk' or 'nurse1'. If a system cannot do it, record that and plan to replace it.",
+    "e": "Any shared login. This is required, not addressable: there is no version of this you can argue your way out of.",
+    "r": "Account list showing one per named person; evidence generic accounts were removed and when."
+  },
+  "164.312(a)(2)(ii)": {
+    "o": "A way to reach patient data in an emergency, when normal access is not available.",
+    "a": "Required. Set up break-glass access: an account or procedure that gives immediate access, is alarmed when used, and is reviewed afterwards every time.",
+    "e": "Either no emergency route at all, or one that is used routinely and never reviewed.",
+    "r": "Break-glass procedure; the accounts; alerts on use; review records for each use."
+  },
+  "164.312(a)(2)(iii)": {
+    "o": "Sessions ending by themselves after a period of inactivity.",
+    "a": "Addressable - do this, or something else that achieves the same thing, or write down why neither is reasonable for you. Set a timeout that suits the place: short at a shared reception machine, longer in a locked office. Apply it to the EHR, not only to Windows.",
+    "e": "Timeouts set so long they do nothing, or set on the desktop but not in the clinical application.",
+    "r": "Timeout settings per system and location; the reasoning where a longer one was chosen."
+  },
+  "164.312(a)(2)(iv)": {
+    "o": "Encrypting patient data where it is stored.",
+    "a": "Addressable - do this, or something else that achieves the same thing, or write down why neither is reasonable for you. Turn on full-disk encryption on every laptop, desktop and server, and on phones and tablets that hold data. Record where it is on and where it is not.",
+    "e": "A lost laptop with no encryption is presumed to be a reportable breach unless a written assessment shows a low probability that the data was compromised. One encrypted to HHS's guidance is not a breach at all, because the data counts as secured. This one control often decides whether an incident becomes a notification.",
+    "r": "Encryption status report per device; the decision and reasoning anywhere it is not used."
+  },
+  "164.312(b)": {
+    "o": "Systems that record what was done with patient data, and by whom.",
+    "a": "Turn on audit logging in the EHR and anything else holding ePHI. Keep the logs long enough to investigate - six years is the documentation standard people usually follow. Protect them from being edited.",
+    "e": "Logging switched off to save space, or logs that can be altered by the people they record.",
+    "r": "Audit settings; a sample log showing user, record, action and time; retention and protection arrangements."
+  },
+  "164.312(c)(1)": {
+    "o": "Protecting patient data from being changed or destroyed without authorisation.",
+    "a": "Restrict who can amend records, keep an amendment history, and protect backups from alteration.",
+    "e": "Records that can be edited with no trace of what they said before.",
+    "r": "Amendment history in the record system; permissions showing who may change what."
+  },
+  "164.312(c)(2)": {
+    "o": "A way to confirm that patient data has not been altered or destroyed improperly.",
+    "a": "Addressable - do this, or something else that achieves the same thing, or write down why neither is reasonable for you. Use checksums, digital signatures or database integrity features, and verify backups restore intact.",
+    "e": "No way to tell whether a file changed between backup and restore.",
+    "r": "Integrity checking in use; backup verification results."
+  },
+  "164.312(d)": {
+    "o": "Proving that someone is who they claim before letting them at patient data.",
+    "a": "Passwords to a written standard, plus multi-factor authentication for remote access, email and administrator accounts. Extend it further as systems allow.",
+    "e": "Remote access with a password alone. Stolen or guessed passwords are a common way into healthcare networks.",
+    "r": "Authentication settings; MFA coverage list; the plan for anything not yet covered."
+  },
+  "164.312(e)(1)": {
+    "o": "Protecting patient data while it travels over a network.",
+    "a": "Use TLS for email and web, a VPN or private circuit for remote access, and secure file transfer instead of attachments where you can. Know where data leaves your network and what protects it.",
+    "e": "Patient data emailed in plain text, or a fax-to-email route nobody thought about.",
+    "r": "Map of where ePHI is transmitted; the protection on each route; email encryption settings."
+  },
+  "164.312(e)(2)(i)": {
+    "o": "Making sure data is not changed in transit without being detected.",
+    "a": "Addressable - do this, or something else that achieves the same thing, or write down why neither is reasonable for you. Use protocols that detect tampering - TLS does this for you - and check that transfers completed intact.",
+    "e": "Old interfaces running plain FTP or unencrypted HL7 feeds between systems.",
+    "r": "Protocols in use per interface; transfer verification records."
+  },
+  "164.312(e)(2)(ii)": {
+    "o": "Encrypting patient data as it crosses a network, whenever that is reasonable.",
+    "a": "Addressable - do this, or something else that achieves the same thing, or write down why neither is reasonable for you. Enforce TLS everywhere. For patient email, use a secure message portal, or get and record the patient's agreement to unencrypted email if they ask for it.",
+    "e": "Internal traffic assumed safe because it is 'on our network'.",
+    "r": "TLS enforcement settings; secure messaging arrangements; recorded patient preferences."
+  },
+  "164.314(a)(1)": {
+    "o": "What the agreement with a vendor handling patient data has to contain.",
+    "a": "Make sure each agreement says the vendor will safeguard the data, will make its subcontractors do the same, and will report security incidents, including breaches, to you. The Privacy Rule, 164.504(e), adds further terms, including returning or destroying the data at the end.",
+    "e": "Agreements signed years ago that no longer match what the vendor actually does, or that never had breach reporting in them.",
+    "r": "Executed agreements; a review date against each; the register that ties them to vendors."
+  },
+  "164.314(a)(2)(i)": {
+    "o": "The specific promises the contract must extract from the vendor.",
+    "a": "Required. The agreement must require the vendor to: comply with the Security Rule's safeguards for ePHI; bind its subcontractors to the same; and report security incidents to you, including breaches of unsecured data. Put a stated timescale on the reporting. The Privacy Rule, 164.504(e), adds further terms, including return or destruction of the data at the end.",
+    "e": "A missing reporting timescale. 'Promptly' is not a timescale - name the number of days.",
+    "r": "The clauses themselves, and the dates they were agreed."
+  },
+  "164.314(a)(2)(ii)": {
+    "o": "What takes the place of a contract when both parties are government bodies.",
+    "a": "Required. If this is you, use a memorandum of understanding or the arrangement your law provides, and keep it filed like any other agreement.",
+    "e": "Public-sector relationships running on nothing because a contract felt inappropriate.",
+    "r": "The memorandum or equivalent, signed and dated."
+  },
+  "164.314(a)(2)(iii)": {
+    "o": "A vendor's own suppliers are bound by the same terms.",
+    "a": "Required. If you are a business associate yourself, sign agreements with your subcontractors on the same terms. If you are a covered entity, ask your vendors to show that they have.",
+    "e": "The cloud provider behind your vendor, with no agreement anywhere in the chain.",
+    "r": "Subcontractor agreements, or written confirmation from the vendor that they hold them."
+  },
+  "164.314(b)(1)": {
+    "o": "Where a group health plan shares data with the employer sponsoring it, the plan documents must say how that data is protected.",
+    "a": "If you run a group health plan, amend the plan documents to require the sponsor to safeguard ePHI and to keep plan data away from employment decisions. If you do not, record that this does not apply.",
+    "e": "Plan documents that were never amended, or a not-applicable claim with nothing behind it.",
+    "r": "Amended plan documents, or a documented decision that no group health plan exists."
+  },
+  "164.314(b)(2)": {
+    "o": "What those plan documents have to require of the sponsor.",
+    "a": "Required. Require reasonable safeguards, separation between plan administration and employment functions, the same terms for anyone the sponsor passes data to, and reporting of incidents back to the plan.",
+    "e": "Separation on paper that does not exist in practice, with the same HR staff seeing both.",
+    "r": "The plan document clauses; evidence of how the separation works day to day."
+  },
+  "164.316(a)": {
+    "o": "Having written policies and procedures that meet the Security Rule - and changing them when you need to.",
+    "a": "Write them for your organisation, not from a template with another clinic's name in it. Approve them, publish them, and update them when something changes.",
+    "e": "Policies describing systems the organisation does not use, or a template with the wrong organisation named in it. Both are read as never having been adopted.",
+    "r": "Approved policy set with dates and an owner; the change history."
+  },
+  "164.316(b)(1)": {
+    "o": "Keeping your policies in writing, along with a record of the actions, activities and assessments the Rule asks you to document.",
+    "a": "Keep them where they can be found: risk analyses, training records, incident records, access reviews, evaluations, agreements. Electronic is fine.",
+    "e": "Work that was genuinely done but never written down. Undocumented compliance counts as none.",
+    "r": "The document set itself, with dates and versions."
+  },
+  "164.316(b)(2)(i)": {
+    "o": "Keeping it for six years from creation, or from when it was last in effect - whichever is later.",
+    "a": "Required. Set retention to six years for everything named above, and do not let a system clean-up or a staff change quietly delete it.",
+    "e": "Logs rotated away after 90 days; incident records lost when the ticketing system changed.",
+    "r": "Retention policy; evidence it is applied to logs, records and old policy versions."
+  },
+  "164.316(b)(2)(ii)": {
+    "o": "Making the documentation available to the people who have to follow it.",
+    "a": "Required. Publish policies where staff can reach them without asking, and point to them in training.",
+    "e": "Policies in a folder only management can open.",
+    "r": "Where they are published; staff acknowledgement that they know where to look."
+  },
+  "164.316(b)(2)(iii)": {
+    "o": "Reviewing documentation periodically, and updating it when the environment or your risks change.",
+    "a": "Required. Review on a schedule, and again after any significant change. Record the review even when nothing changed.",
+    "e": "Policies last touched years ago, in an organisation that has since changed its EHR.",
+    "r": "Review dates against each document; the changes made."
+  },
+  "164.402": {
+    "o": "The test for whether an incident is a breach: unsecured patient data has been acquired, accessed, used or disclosed in a way the Privacy Rule does not permit - and it is presumed to be a breach unless you can show a low probability that the data was compromised.",
+    "a": "For every incident, run the four-factor assessment in writing: what data was involved and how identifiable; who saw it; whether it was actually acquired or viewed; and how far the risk has been reduced. Keep the reasoning, not just the conclusion.",
+    "e": "The burden is on you. A decision of 'not a breach' with no written four-factor assessment behind it is treated as a breach you failed to report.",
+    "r": "Four-factor assessment per incident, dated and signed off; the decision and who made it."
+  },
+  "164.404": {
+    "o": "Telling the people whose data was involved, without unreasonable delay and in no case later than 60 calendar days after discovery.",
+    "a": "Write to each person by first-class post, or by email if they agreed to that. Say what happened, when, what data was involved, what they should do, what you are doing, and how to contact you. Where you cannot reach ten or more people, put a substitute notice on your website for 90 days or in the media.",
+    "e": "The date of discovery against the date of the letters. Discovery is when any employee knew or should have known, not when management was told.",
+    "r": "Copy of the letter; the mailing list and date; substitute notice evidence where used."
+  },
+  "164.406": {
+    "o": "For a breach affecting more than 500 residents of a state or jurisdiction, telling prominent media outlets there - within the same 60 days.",
+    "a": "Prepare a press statement alongside the individual letters. Same content requirements. Do not wait for the story to break first.",
+    "e": "Large breaches where individuals were told but the media notice was skipped.",
+    "r": "Press release; the outlets it went to; the date."
+  },
+  "164.408": {
+    "o": "Reporting breaches to HHS - immediately for 500 or more people, annually for smaller ones.",
+    "a": "500 or more: report through the HHS portal within 60 days of discovery. Fewer than 500: log each one and submit them within 60 days of the end of the calendar year. Keep the confirmation.",
+    "e": "The small-breach log. Organisations remember the big report and forget the annual submission of the small ones.",
+    "r": "Portal submission confirmations; the running log of small breaches for the year."
+  },
+  "164.410": {
+    "o": "A vendor who has a breach must tell the covered entity, without unreasonable delay and within 60 days of discovery.",
+    "a": "If you are a vendor, know who to call at each customer and report in writing, with the individuals affected and everything you know. If you are the covered entity, put a shorter timescale in your agreements. Where the vendor acts as your agent, its discovery counts as yours, so its 60 days and yours run at the same time.",
+    "e": "Contracts that simply restate 60 days, leaving the covered entity no time to act.",
+    "r": "Reporting route per customer; the notice sent, with dates; the contract clause."
+  },
+  "164.412": {
+    "o": "Notification can be held back if law enforcement says it would impede an investigation.",
+    "a": "If asked to delay, get it in writing with the period stated. If asked verbally, record it and delay no more than 30 days unless you then get it in writing.",
+    "e": "A delay claimed with nothing in the file to support it.",
+    "r": "The written request, or a note of the verbal one with the name, agency and date."
+  },
+  "164.414": {
+    "o": "You must have the policies, training and complaint handling behind all this - and if you decide not to notify, it is on you to prove that decision was right.",
+    "a": "Keep the breach procedure, train staff to report suspected breaches, and keep every assessment - including the ones that concluded no notification was needed.",
+    "e": "The assessments behind decisions not to notify. They are the first thing asked for after a complaint.",
+    "r": "Breach policy; training records; every four-factor assessment kept for six years."
+  }
+}

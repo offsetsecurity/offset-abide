@@ -1,0 +1,295 @@
+{
+  "title": "Get ready",
+  "intro": "HIPAA has no certificate and no pass mark. What you are working towards is being able to show, on the day someone asks, that you know where patient data is, what could happen to it, what you did about that, and what you will do when something goes wrong. This plan gets you there in order, starting with the risk analysis, because that is what OCR asks for first.",
+  "stages": [
+    {
+      "id": "setup",
+      "name": "Set the product up",
+      "aim": "An hour's work. Nothing else goes well until the right people are in here and it can email you.",
+      "tasks": [
+        {
+          "id": "setup.people",
+          "title": "Add the people who will do the work",
+          "do": "Go to Users and add everyone who will record work here. Give each of them the smallest role that lets them do their job: Contributor to record work, Auditor or Read only for people who only need to look.",
+          "why": "HIPAA work spread across one person stalls the first time that person is on leave. It also means every entry is against a real name, which is what an investigator expects to see.",
+          "check": "users.beyondAdmin",
+          "goto": "people",
+          "clause": "164.308(a)(2)"
+        },
+        {
+          "id": "setup.email",
+          "title": "Turn on email",
+          "do": "In Settings, put in your mail server details and send yourself a test message.",
+          "why": "Without it nobody is reminded about overdue work, and an administrator who forgets their password cannot get back in on their own.",
+          "check": "settings.smtp",
+          "goto": "settings"
+        },
+        {
+          "id": "setup.officer",
+          "title": "Name your Security Official",
+          "do": "Decide who is accountable for security and write it down - in a policy, in their job description, and where staff can see it. Record it here as a policy document.",
+          "why": "164.308(a)(2) asks for one named person, not a committee. It is the shortest requirement in the Rule and one of the most commonly failed, usually because the named person left.",
+          "goto": "policies",
+          "clause": "164.308(a)(2)"
+        },
+        {
+          "id": "setup.backup",
+          "title": "Check this product is backing itself up",
+          "do": "Open Backups and confirm one has run. Copy one off this machine and keep it somewhere else.",
+          "why": "Everything you are about to record lives here. A compliance record that exists only on one server is one failed disk away from a very bad conversation.",
+          "check": "jobs.backupRan",
+          "goto": "backups",
+          "clause": "164.308(a)(7)(ii)(A)"
+        }
+      ]
+    },
+    {
+      "id": "scope",
+      "name": "Know what you hold",
+      "aim": "You cannot protect patient data you have forgotten about. This stage is the list of where it lives.",
+      "tasks": [
+        {
+          "id": "scope.assets",
+          "title": "List every system that touches patient data",
+          "do": "In Assets, add every system, device and service that creates, receives, stores or transmits ePHI. The EHR, the practice management system, laptops, phones, the backup service, the cloud file share, the scanner that emails PDFs, the billing company's portal. Start from the sample list and cut what is not yours.",
+          "why": "The risk analysis is only as good as this list, and OCR settlements repeatedly turn on systems the organisation forgot it had.",
+          "check": "registers.assets",
+          "goto": "assets",
+          "clause": "164.308(a)(1)(ii)(A)"
+        },
+        {
+          "id": "scope.vendors",
+          "title": "List every vendor that touches patient data",
+          "do": "In Suppliers, add each one: billing, IT support, cloud hosting, transcription, shredding, answering service, the EHR vendor itself. Note what data each one sees and where they hold it.",
+          "why": "Every one of them needs a business associate agreement before they touch the data. You cannot check you have them until you know who they are.",
+          "check": "registers.parties",
+          "goto": "vendors",
+          "clause": "164.308(b)(1)"
+        },
+        {
+          "id": "scope.baas",
+          "title": "Check each vendor has a signed agreement",
+          "do": "For every vendor on that list, find the signed business associate agreement and record it. Where there is none, or where it is only a confidentiality clause, raise it as a task.",
+          "why": "A missing BAA is a finding on its own, regardless of whether anything went wrong. It is also one of the easiest things for an investigator to check.",
+          "goto": "vendors",
+          "clause": "164.314(a)(1)"
+        },
+        {
+          "id": "scope.scope",
+          "title": "Write down what this covers",
+          "do": "In Policies, write a short scope: which sites, which systems, which parts of the organisation. If you are a covered entity with a hybrid designation, say which components are in.",
+          "why": "It decides what the rest of the work applies to, and it stops arguments later about whether a site or a system was ever in.",
+          "check": "programme.scope",
+          "goto": "policies"
+        }
+      ]
+    },
+    {
+      "id": "risk",
+      "name": "The risk analysis",
+      "aim": "The thing OCR asks for first, and the thing most organisations either have not done or have not repeated.",
+      "tasks": [
+        {
+          "id": "risk.method",
+          "title": "Say how you assess risk",
+          "do": "In Policies, record your method in a few lines: how you score likelihood and impact, and what score means you must act.",
+          "why": "Without it, two people assess the same threat differently and the results cannot be compared year to year.",
+          "check": "programme.methodology",
+          "goto": "policies",
+          "clause": "164.308(a)(1)(ii)(A)"
+        },
+        {
+          "id": "risk.risks",
+          "title": "Work through the threats to each system",
+          "do": "In Risks, record what could go wrong for the systems on your asset list: ransomware, a lost laptop, a phishing email, a rogue insider looking at a neighbour's record, a failed backup, a vendor breach. Score each one.",
+          "why": "This is 164.308(a)(1)(ii)(A). It has to cover the whole environment, not just the EHR.",
+          "check": "registers.risks",
+          "goto": "risks",
+          "clause": "164.308(a)(1)(ii)(A)"
+        },
+        {
+          "id": "risk.owned",
+          "title": "Give every risk an owner",
+          "do": "Set an owner on each risk. The owner is whoever can actually decide something about it, not whoever wrote it down.",
+          "why": "A risk with no owner does not move. Investigators read a register of ownerless risks as a document written for them rather than for you.",
+          "check": "risks.owned",
+          "goto": "risks",
+          "clause": "164.308(a)(1)(ii)(B)"
+        },
+        {
+          "id": "risk.linked",
+          "title": "Link each risk to the systems it threatens",
+          "do": "Link risks to assets so you can see which systems carry the most, and so a change to one shows you what it affects.",
+          "why": "It turns two separate lists into something you can actually use when deciding where money goes.",
+          "check": "risks.linked",
+          "goto": "risks"
+        },
+        {
+          "id": "risk.treat",
+          "title": "Turn the serious ones into work",
+          "do": "For each risk above your threshold, raise a task with an owner and a date. Where you are accepting a risk instead, record who accepted it and why.",
+          "why": "This is 164.308(a)(1)(ii)(B), risk management. A risk analysis with nothing behind it is treated as no risk analysis at all.",
+          "check": "registers.tasks",
+          "goto": "tasks",
+          "clause": "164.308(a)(1)(ii)(B)"
+        }
+      ]
+    },
+    {
+      "id": "safeguards",
+      "name": "Work through the safeguards",
+      "aim": "Go through the 72 requirements and record where you stand on each. This is the long stage; do it a Part at a time.",
+      "tasks": [
+        {
+          "id": "safeguards.owned",
+          "title": "Give every requirement an owner",
+          "do": "Open Requirements and set an owner on each. Filter by Part and work through one at a time - Administrative first, it is the biggest.",
+          "why": "Ownership is what turns a checklist into work somebody is doing.",
+          "check": "controls.owned",
+          "goto": "controls"
+        },
+        {
+          "id": "safeguards.addressable",
+          "title": "Decide, in writing, what you do about each addressable item",
+          "do": "In Applicability, for every addressable requirement record one of three things: you do it, you do something else that achieves the same thing, or it is not reasonable for you and here is why. Write the reason in every case.",
+          "why": "Addressable does not mean optional. The written reasoning is exactly what is asked for when an investigator finds you did not encrypt a laptop.",
+          "check": "soa.justified",
+          "goto": "soa",
+          "clause": "164.306(d)"
+        },
+        {
+          "id": "safeguards.policies",
+          "title": "Write the policies the Rule asks for",
+          "do": "In Policies, record each policy you have: security, sanctions, access, incidents, contingency, device disposal, workstation use. Write them for your organisation - a template with another clinic's name in it is worse than nothing.",
+          "why": "164.316(a) requires them in writing, and 164.316(b)(2)(ii) requires staff to be able to find them.",
+          "check": "registers.policies",
+          "goto": "policies",
+          "clause": "164.316(a)"
+        },
+        {
+          "id": "safeguards.approved",
+          "title": "Get the policies approved, and set review dates",
+          "do": "Mark each policy approved, by whom and when, and set the next review date.",
+          "why": "An unapproved policy is a draft. 164.316(b)(2)(iii) asks for periodic review, and the review date is how anyone can tell it happens.",
+          "check": "policies.approved",
+          "goto": "policies",
+          "clause": "164.316(b)(2)(iii)"
+        },
+        {
+          "id": "safeguards.training",
+          "title": "Record who has been trained",
+          "do": "In Training, record each session: who attended, what it covered, the date. Include management and clinicians, not only administrative staff.",
+          "why": "164.308(a)(5) applies to the whole workforce. Missing records for the people at the top is a common and awkward finding.",
+          "goto": "training",
+          "clause": "164.308(a)(5)(i)"
+        }
+      ]
+    },
+    {
+      "id": "prove",
+      "name": "Prove it",
+      "aim": "Evidence, attached to the requirement it proves. This is what turns an assertion into a record.",
+      "tasks": [
+        {
+          "id": "prove.evidence",
+          "title": "Attach evidence to the requirements",
+          "do": "For each requirement, attach what proves it: the encryption report, the training register, the access review, the disposal certificate, screenshots of settings.",
+          "why": "Undocumented compliance counts as none. 164.316(b)(1) asks for the record, not the intention.",
+          "check": "evidence.any",
+          "goto": "controls",
+          "clause": "164.316(b)(1)"
+        },
+        {
+          "id": "prove.dated",
+          "title": "Date the evidence, and keep it current",
+          "do": "Give each piece of evidence a date. Replace anything more than a year old unless the thing it proves genuinely has not changed.",
+          "why": "Evidence with no date proves nothing about now. Six years is the retention period; currency is a different question.",
+          "check": "evidence.dated",
+          "goto": "evidence",
+          "clause": "164.316(b)(2)(i)"
+        },
+        {
+          "id": "prove.access",
+          "title": "Do an access review",
+          "do": "Get the user list out of each system holding ePHI. Check every account against a person who still works here and still needs it. Remove what is left over and record what you removed.",
+          "why": "164.308(a)(4)(ii)(C). Leavers with live accounts are quick to test for and almost always found.",
+          "goto": "tasks",
+          "clause": "164.308(a)(4)(ii)(C)"
+        },
+        {
+          "id": "prove.backup",
+          "title": "Restore a backup and prove it worked",
+          "do": "Restore a real backup to a test location and check the data is there and usable. Record the date, what you restored and the result.",
+          "why": "164.308(a)(7)(ii)(D). A backup nobody has restored is a hope, and ransomware cases turn on this exact point.",
+          "goto": "tasks",
+          "clause": "164.308(a)(7)(ii)(D)"
+        },
+        {
+          "id": "prove.incident",
+          "title": "Set up how incidents get reported and recorded",
+          "do": "In Findings, record your incident route: who staff tell, who decides, who investigates. Log every incident here, including the ones that turn out to be nothing.",
+          "why": "164.308(a)(6). An empty incident log reads as nobody reporting, not as nothing happening.",
+          "check": "registers.findings",
+          "goto": "findings",
+          "clause": "164.308(a)(6)(i)"
+        },
+        {
+          "id": "prove.breach",
+          "title": "Write the breach procedure before you need it",
+          "do": "Write down the four-factor assessment, who makes the call, and the notification steps and deadlines: individuals and HHS within 60 days, media above 500 in a state, the annual log for the small ones. Keep it as a policy.",
+          "why": "The 60-day clock starts at discovery, which is when anyone in the workforce knew or should have known. Nobody should be reading the Rule for the first time on day one of an incident.",
+          "goto": "policies",
+          "clause": "164.404"
+        },
+        {
+          "id": "prove.communication",
+          "title": "Plan the security reminders",
+          "do": "In Communications, record what you send between training rounds, to whom, how often and when it is next due: a phishing reminder, a note on a current scam, an item in the team meeting.",
+          "why": "164.308(a)(5)(ii)(A) asks for periodic reminders. A due date here puts them in the Calendar instead of leaving them to memory.",
+          "check": "registers.communications",
+          "goto": "communications",
+          "clause": "164.308(a)(5)(ii)(A)"
+        }
+      ]
+    },
+    {
+      "id": "check",
+      "name": "Check it still works",
+      "aim": "HIPAA is not a project with an end. This stage is the habit that keeps the work from going stale.",
+      "tasks": [
+        {
+          "id": "check.gaps",
+          "title": "Look at the gap report",
+          "do": "Open Gap analysis and work through what is not yet in place. Raise the serious ones as tasks with dates.",
+          "why": "It is the fastest honest answer to 'where are we', and the list you would be asked for first.",
+          "goto": "gaps"
+        },
+        {
+          "id": "check.testing",
+          "title": "Test the controls you rely on most",
+          "do": "Open a requirement and use the testing section on it: check a handful for real - is encryption actually on every laptop, does the emergency account alert when used, does the leaver process run same-day. Record the result, including failures.",
+          "why": "164.308(a)(8) asks for periodic evaluation. Tests that never fail are usually tests that were not really run.",
+          "goto": "controls",
+          "clause": "164.308(a)(8)"
+        },
+        {
+          "id": "check.calendar",
+          "title": "Put the recurring work in the calendar",
+          "do": "Open Calendar and check what is due: policy reviews, training, access reviews, the restore test, the small-breach annual submission.",
+          "why": "Every one of these is a dated obligation, and the annual HHS submission for small breaches is the one people forget entirely.",
+          "goto": "calendar",
+          "clause": "164.408"
+        },
+        {
+          "id": "check.report",
+          "title": "Produce the report and keep it",
+          "do": "Export the report and save it with the date. Do it again each time you review, so you can show the position at any point in the last six years.",
+          "why": "164.316(b)(2)(i) is six years. Being able to show what you looked like two years ago is the difference between a documented programme and a claim.",
+          "check": "reports.exported",
+          "goto": "reports",
+          "clause": "164.316(b)(2)(i)"
+        }
+      ]
+    }
+  ]
+}

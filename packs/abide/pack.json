@@ -1,0 +1,30 @@
+{
+  "id": "abide",
+  "product": "Offset Abide",
+  "edition": "",
+  "framework": "HIPAA Security Rule and Breach Notification Rule",
+  "frameworkShort": "HIPAA",
+  "source": "Citations and titles from 45 CFR Parts 160 and 164, Subparts C and D. Guidance wording is original to Offset Security; it is not the text of the regulation, and it is not legal advice.",
+  "disclaimer": "Offset Abide is not affiliated with, endorsed by, or certified by the U.S. Department of Health and Human Services. HIPAA has no certification: no product can make you compliant, and no auditor can certify you.",
+  "contact": "info@offsetsecurity.net",
+  "themeLabel": "Part",
+  "itemLabel": "Requirement",
+  "features": {
+    "statementOfApplicability": true,
+    "certificationTracking": false,
+    "journey": true,
+    "ismsRegisters": true,
+    "calendar": true,
+    "policyTemplates": false,
+    "controlTesting": true,
+    "help": true,
+    "gapAnalysis": true,
+    "demoData": true,
+    "csv": true
+  },
+  "counts": {
+    "themes": 6,
+    "controls": 72,
+    "withGuidance": 72
+  }
+}
