@@ -1,0 +1,1514 @@
+{
+  "note": "Starting points, not an inventory. Every practice, hospital and vendor is different: take what fits, change the wording, and delete the rest. Scores are a first guess to argue with, not an answer. Nothing here is legal advice.",
+  "assets": [
+    {
+      "id": "clinical",
+      "name": "Clinical systems",
+      "items": [
+        {
+          "name": "Electronic health record (EHR)",
+          "type": "Application",
+          "category": "Supporting asset",
+          "criticality": "High",
+          "classification": "Restricted",
+          "location": "Vendor cloud or on-site server",
+          "refs": [
+            "164.312(a)(1)",
+            "164.312(b)"
+          ]
+        },
+        {
+          "name": "Practice management / scheduling",
+          "type": "Application",
+          "category": "Supporting asset",
+          "criticality": "High",
+          "classification": "Restricted",
+          "location": "Vendor cloud",
+          "refs": [
+            "164.312(a)(1)"
+          ]
+        },
+        {
+          "name": "e-Prescribing system",
+          "type": "Application",
+          "category": "Supporting asset",
+          "criticality": "High",
+          "classification": "Restricted",
+          "location": "Vendor cloud",
+          "refs": [
+            "164.312(d)"
+          ]
+        },
+        {
+          "name": "Laboratory information system",
+          "type": "Application",
+          "category": "Supporting asset",
+          "criticality": "High",
+          "classification": "Restricted",
+          "location": "On-site server",
+          "refs": [
+            "164.312(e)(1)"
+          ]
+        },
+        {
+          "name": "Radiology / PACS image store",
+          "type": "Application",
+          "category": "Supporting asset",
+          "criticality": "High",
+          "classification": "Restricted",
+          "location": "On-site server",
+          "refs": [
+            "164.310(d)(1)",
+            "164.312(e)(1)"
+          ]
+        },
+        {
+          "name": "Patient portal",
+          "type": "Application",
+          "category": "Supporting asset",
+          "criticality": "Medium",
+          "classification": "Restricted",
+          "location": "Vendor cloud",
+          "refs": [
+            "164.312(d)",
+            "164.312(e)(2)(ii)"
+          ]
+        },
+        {
+          "name": "Telehealth platform",
+          "type": "Application",
+          "category": "Supporting asset",
+          "criticality": "Medium",
+          "classification": "Restricted",
+          "location": "Vendor cloud",
+          "refs": [
+            "164.312(e)(1)",
+            "164.308(b)(1)"
+          ]
+        },
+        {
+          "name": "HL7 / FHIR interface engine",
+          "type": "Integration",
+          "category": "Supporting asset",
+          "criticality": "High",
+          "classification": "Restricted",
+          "location": "On-site server",
+          "refs": [
+            "164.312(e)(2)(i)"
+          ]
+        },
+        {
+          "name": "Dictation and transcription service",
+          "type": "Service",
+          "category": "Supporting asset",
+          "criticality": "Medium",
+          "classification": "Restricted",
+          "location": "Vendor cloud",
+          "refs": [
+            "164.308(b)(1)"
+          ]
+        },
+        {
+          "name": "Medical devices that store or send data",
+          "type": "Device",
+          "category": "Supporting asset",
+          "criticality": "High",
+          "classification": "Restricted",
+          "location": "Clinical areas",
+          "refs": [
+            "164.310(d)(1)",
+            "164.312(a)(1)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "business",
+      "name": "Business systems",
+      "items": [
+        {
+          "name": "Billing and claims system",
+          "type": "Application",
+          "category": "Supporting asset",
+          "criticality": "High",
+          "classification": "Restricted",
+          "location": "Vendor cloud",
+          "refs": [
+            "164.308(b)(1)"
+          ]
+        },
+        {
+          "name": "Clearinghouse connection",
+          "type": "Integration",
+          "category": "Supporting asset",
+          "criticality": "High",
+          "classification": "Restricted",
+          "location": "Vendor",
+          "refs": [
+            "164.308(a)(4)(ii)(A)"
+          ]
+        },
+        {
+          "name": "Email service",
+          "type": "Application",
+          "category": "Supporting asset",
+          "criticality": "High",
+          "classification": "Restricted",
+          "location": "Cloud",
+          "refs": [
+            "164.312(e)(2)(ii)",
+            "164.312(d)"
+          ]
+        },
+        {
+          "name": "Shared file storage",
+          "type": "Application",
+          "category": "Supporting asset",
+          "criticality": "Medium",
+          "classification": "Restricted",
+          "location": "Cloud or on-site",
+          "refs": [
+            "164.312(a)(1)"
+          ]
+        },
+        {
+          "name": "Fax service (physical or fax-to-email)",
+          "type": "Service",
+          "category": "Supporting asset",
+          "criticality": "Medium",
+          "classification": "Restricted",
+          "location": "Office",
+          "refs": [
+            "164.312(e)(1)"
+          ]
+        },
+        {
+          "name": "Answering / after-hours service",
+          "type": "Service",
+          "category": "Supporting asset",
+          "criticality": "Medium",
+          "classification": "Restricted",
+          "location": "Vendor",
+          "refs": [
+            "164.308(b)(1)"
+          ]
+        },
+        {
+          "name": "HR and payroll system",
+          "type": "Application",
+          "category": "Supporting asset",
+          "criticality": "Medium",
+          "classification": "Confidential",
+          "location": "Cloud",
+          "refs": [
+            "164.308(a)(3)(i)"
+          ]
+        },
+        {
+          "name": "Document scanning and archive",
+          "type": "Service",
+          "category": "Supporting asset",
+          "criticality": "Medium",
+          "classification": "Restricted",
+          "location": "Office or vendor",
+          "refs": [
+            "164.310(d)(1)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "endpoints",
+      "name": "Devices people use",
+      "items": [
+        {
+          "name": "Clinician laptops",
+          "type": "Endpoint",
+          "category": "Supporting asset",
+          "criticality": "High",
+          "classification": "Restricted",
+          "location": "Mobile",
+          "refs": [
+            "164.312(a)(2)(iv)",
+            "164.310(c)"
+          ]
+        },
+        {
+          "name": "Reception and nursing-station workstations",
+          "type": "Endpoint",
+          "category": "Supporting asset",
+          "criticality": "High",
+          "classification": "Restricted",
+          "location": "Clinical areas",
+          "refs": [
+            "164.310(b)",
+            "164.310(c)",
+            "164.312(a)(2)(iii)"
+          ]
+        },
+        {
+          "name": "Tablets used at the bedside",
+          "type": "Endpoint",
+          "category": "Supporting asset",
+          "criticality": "Medium",
+          "classification": "Restricted",
+          "location": "Clinical areas",
+          "refs": [
+            "164.312(a)(2)(iv)"
+          ]
+        },
+        {
+          "name": "Staff mobile phones with clinical apps or email",
+          "type": "Endpoint",
+          "category": "Supporting asset",
+          "criticality": "Medium",
+          "classification": "Restricted",
+          "location": "Mobile",
+          "refs": [
+            "164.312(a)(2)(iv)"
+          ]
+        },
+        {
+          "name": "Home working computers",
+          "type": "Endpoint",
+          "category": "Supporting asset",
+          "criticality": "Medium",
+          "classification": "Restricted",
+          "location": "Remote",
+          "refs": [
+            "164.310(b)",
+            "164.312(e)(1)"
+          ]
+        },
+        {
+          "name": "Multifunction printers and copiers",
+          "type": "Device",
+          "category": "Supporting asset",
+          "criticality": "Medium",
+          "classification": "Restricted",
+          "location": "Office",
+          "refs": [
+            "164.310(d)(2)(i)"
+          ]
+        },
+        {
+          "name": "Removable media and portable drives",
+          "type": "Media",
+          "category": "Supporting asset",
+          "criticality": "Medium",
+          "classification": "Restricted",
+          "location": "Office",
+          "refs": [
+            "164.310(d)(2)(iii)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "infrastructure",
+      "name": "Infrastructure",
+      "items": [
+        {
+          "name": "Server room or comms cupboard",
+          "type": "Facility",
+          "category": "Supporting asset",
+          "criticality": "High",
+          "classification": "Restricted",
+          "location": "Site",
+          "refs": [
+            "164.310(a)(1)"
+          ]
+        },
+        {
+          "name": "Firewall and remote access (VPN)",
+          "type": "Network",
+          "category": "Supporting asset",
+          "criticality": "High",
+          "classification": "Restricted",
+          "location": "Site",
+          "refs": [
+            "164.312(e)(1)",
+            "164.312(d)"
+          ]
+        },
+        {
+          "name": "Wireless network, staff and guest",
+          "type": "Network",
+          "category": "Supporting asset",
+          "criticality": "Medium",
+          "classification": "Restricted",
+          "location": "Site",
+          "refs": [
+            "164.312(e)(1)"
+          ]
+        },
+        {
+          "name": "Domain and identity service",
+          "type": "Infrastructure",
+          "category": "Supporting asset",
+          "criticality": "High",
+          "classification": "Restricted",
+          "location": "Site or cloud",
+          "refs": [
+            "164.312(a)(2)(i)",
+            "164.312(d)"
+          ]
+        },
+        {
+          "name": "Backup system and offline copies",
+          "type": "Infrastructure",
+          "category": "Supporting asset",
+          "criticality": "High",
+          "classification": "Restricted",
+          "location": "Site and off-site",
+          "refs": [
+            "164.308(a)(7)(ii)(A)"
+          ]
+        },
+        {
+          "name": "Endpoint protection console",
+          "type": "Infrastructure",
+          "category": "Supporting asset",
+          "criticality": "Medium",
+          "classification": "Restricted",
+          "location": "Cloud",
+          "refs": [
+            "164.308(a)(5)(ii)(B)"
+          ]
+        },
+        {
+          "name": "Log collection and alerting",
+          "type": "Infrastructure",
+          "category": "Supporting asset",
+          "criticality": "Medium",
+          "classification": "Restricted",
+          "location": "Site or cloud",
+          "refs": [
+            "164.312(b)",
+            "164.308(a)(1)(ii)(D)"
+          ]
+        },
+        {
+          "name": "Badge access and CCTV",
+          "type": "Facility",
+          "category": "Supporting asset",
+          "criticality": "Medium",
+          "classification": "Restricted",
+          "location": "Site",
+          "refs": [
+            "164.310(a)(2)(ii)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "records",
+      "name": "Records and paper",
+      "items": [
+        {
+          "name": "Paper charts and records in use",
+          "type": "Record",
+          "category": "Primary asset",
+          "criticality": "High",
+          "classification": "Restricted",
+          "location": "Clinical areas",
+          "refs": [
+            "164.310(a)(1)"
+          ]
+        },
+        {
+          "name": "Archived records in storage",
+          "type": "Record",
+          "category": "Primary asset",
+          "criticality": "Medium",
+          "classification": "Restricted",
+          "location": "Store room or vendor",
+          "refs": [
+            "164.310(d)(1)"
+          ]
+        },
+        {
+          "name": "Downtime paper forms",
+          "type": "Record",
+          "category": "Primary asset",
+          "criticality": "Medium",
+          "classification": "Restricted",
+          "location": "Clinical areas",
+          "refs": [
+            "164.308(a)(7)(ii)(C)"
+          ]
+        },
+        {
+          "name": "Shredding and confidential waste",
+          "type": "Service",
+          "category": "Supporting asset",
+          "criticality": "Medium",
+          "classification": "Restricted",
+          "location": "Office",
+          "refs": [
+            "164.310(d)(2)(i)",
+            "164.308(b)(1)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "people",
+      "name": "People and roles",
+      "items": [
+        {
+          "name": "Security Official",
+          "type": "Role",
+          "category": "Supporting asset",
+          "criticality": "High",
+          "classification": "Internal",
+          "location": "Named individual",
+          "refs": [
+            "164.308(a)(2)"
+          ]
+        },
+        {
+          "name": "Privacy Officer",
+          "type": "Role",
+          "category": "Supporting asset",
+          "criticality": "Medium",
+          "classification": "Internal",
+          "location": "Named individual",
+          "refs": [
+            "164.308(a)(2)"
+          ]
+        },
+        {
+          "name": "Clinicians with record access",
+          "type": "Workforce",
+          "category": "Supporting asset",
+          "criticality": "High",
+          "classification": "Internal",
+          "location": "Clinical areas",
+          "refs": [
+            "164.308(a)(4)(i)"
+          ]
+        },
+        {
+          "name": "Reception and scheduling staff",
+          "type": "Workforce",
+          "category": "Supporting asset",
+          "criticality": "Medium",
+          "classification": "Internal",
+          "location": "Front desk",
+          "refs": [
+            "164.308(a)(3)(i)"
+          ]
+        },
+        {
+          "name": "Billing and coding staff",
+          "type": "Workforce",
+          "category": "Supporting asset",
+          "criticality": "Medium",
+          "classification": "Internal",
+          "location": "Back office",
+          "refs": [
+            "164.308(a)(4)(ii)(C)"
+          ]
+        },
+        {
+          "name": "IT administrators",
+          "type": "Workforce",
+          "category": "Supporting asset",
+          "criticality": "High",
+          "classification": "Internal",
+          "location": "IT",
+          "refs": [
+            "164.312(a)(1)"
+          ]
+        },
+        {
+          "name": "Temporary and agency staff",
+          "type": "Workforce",
+          "category": "Supporting asset",
+          "criticality": "Medium",
+          "classification": "Internal",
+          "location": "Varies",
+          "refs": [
+            "164.308(a)(3)(ii)(B)"
+          ]
+        },
+        {
+          "name": "Students and trainees",
+          "type": "Workforce",
+          "category": "Supporting asset",
+          "criticality": "Medium",
+          "classification": "Internal",
+          "location": "Clinical areas",
+          "refs": [
+            "164.308(a)(3)(ii)(A)"
+          ]
+        },
+        {
+          "name": "Contractors with building access",
+          "type": "Workforce",
+          "category": "Supporting asset",
+          "criticality": "Low",
+          "classification": "Internal",
+          "location": "Site",
+          "refs": [
+            "164.310(a)(2)(iii)"
+          ]
+        },
+        {
+          "name": "Leavers awaiting offboarding",
+          "type": "Workforce",
+          "category": "Supporting asset",
+          "criticality": "High",
+          "classification": "Internal",
+          "location": "HR",
+          "refs": [
+            "164.308(a)(3)(ii)(C)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "processes",
+      "name": "How the work gets done",
+      "items": [
+        {
+          "name": "Patient registration and intake",
+          "type": "Process",
+          "category": "Primary asset",
+          "criticality": "High",
+          "classification": "Restricted",
+          "location": "Front desk",
+          "refs": [
+            "164.308(a)(4)(i)"
+          ]
+        },
+        {
+          "name": "Clinical documentation",
+          "type": "Process",
+          "category": "Primary asset",
+          "criticality": "High",
+          "classification": "Restricted",
+          "location": "Clinical areas",
+          "refs": [
+            "164.312(c)(1)"
+          ]
+        },
+        {
+          "name": "Referrals to other providers",
+          "type": "Process",
+          "category": "Primary asset",
+          "criticality": "High",
+          "classification": "Restricted",
+          "location": "Clinical areas",
+          "refs": [
+            "164.312(e)(1)"
+          ]
+        },
+        {
+          "name": "Release of information requests",
+          "type": "Process",
+          "category": "Primary asset",
+          "criticality": "High",
+          "classification": "Restricted",
+          "location": "Records",
+          "refs": [
+            "164.312(e)(1)"
+          ]
+        },
+        {
+          "name": "Claims submission",
+          "type": "Process",
+          "category": "Primary asset",
+          "criticality": "High",
+          "classification": "Restricted",
+          "location": "Billing",
+          "refs": [
+            "164.308(b)(1)"
+          ]
+        },
+        {
+          "name": "Incident reporting and triage",
+          "type": "Process",
+          "category": "Primary asset",
+          "criticality": "High",
+          "classification": "Internal",
+          "location": "Whole organisation",
+          "refs": [
+            "164.308(a)(6)(i)"
+          ]
+        },
+        {
+          "name": "Breach assessment and notification",
+          "type": "Process",
+          "category": "Primary asset",
+          "criticality": "High",
+          "classification": "Internal",
+          "location": "Security Official",
+          "refs": [
+            "164.402",
+            "164.404"
+          ]
+        },
+        {
+          "name": "Access request and approval",
+          "type": "Process",
+          "category": "Primary asset",
+          "criticality": "High",
+          "classification": "Internal",
+          "location": "IT and managers",
+          "refs": [
+            "164.308(a)(4)(ii)(B)"
+          ]
+        },
+        {
+          "name": "Joiner, mover, leaver",
+          "type": "Process",
+          "category": "Primary asset",
+          "criticality": "High",
+          "classification": "Internal",
+          "location": "HR and IT",
+          "refs": [
+            "164.308(a)(3)(i)"
+          ]
+        },
+        {
+          "name": "Annual risk analysis",
+          "type": "Process",
+          "category": "Primary asset",
+          "criticality": "High",
+          "classification": "Internal",
+          "location": "Security Official",
+          "refs": [
+            "164.308(a)(1)(i)"
+          ]
+        },
+        {
+          "name": "Vendor onboarding and BAA signing",
+          "type": "Process",
+          "category": "Primary asset",
+          "criticality": "High",
+          "classification": "Internal",
+          "location": "Practice manager",
+          "refs": [
+            "164.308(b)(1)"
+          ]
+        },
+        {
+          "name": "Downtime and recovery drill",
+          "type": "Process",
+          "category": "Primary asset",
+          "criticality": "Medium",
+          "classification": "Internal",
+          "location": "IT and clinical",
+          "refs": [
+            "164.308(a)(7)(i)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "documents",
+      "name": "Policies and records",
+      "items": [
+        {
+          "name": "Information security policy set",
+          "type": "Document",
+          "category": "Primary asset",
+          "criticality": "High",
+          "classification": "Internal",
+          "location": "Policies",
+          "refs": [
+            "164.316(a)"
+          ]
+        },
+        {
+          "name": "Sanction policy",
+          "type": "Document",
+          "category": "Primary asset",
+          "criticality": "Medium",
+          "classification": "Internal",
+          "location": "HR",
+          "refs": [
+            "164.308(a)(1)(ii)(C)"
+          ]
+        },
+        {
+          "name": "Contingency and disaster recovery plan",
+          "type": "Document",
+          "category": "Primary asset",
+          "criticality": "High",
+          "classification": "Internal",
+          "location": "IT",
+          "refs": [
+            "164.308(a)(7)(ii)(B)"
+          ]
+        },
+        {
+          "name": "Breach notification procedure",
+          "type": "Document",
+          "category": "Primary asset",
+          "criticality": "High",
+          "classification": "Internal",
+          "location": "Security Official",
+          "refs": [
+            "164.414"
+          ]
+        },
+        {
+          "name": "Business associate agreements",
+          "type": "Record",
+          "category": "Primary asset",
+          "criticality": "High",
+          "classification": "Confidential",
+          "location": "Contracts file",
+          "refs": [
+            "164.314(a)(1)"
+          ]
+        },
+        {
+          "name": "Risk analysis report and register",
+          "type": "Record",
+          "category": "Primary asset",
+          "criticality": "High",
+          "classification": "Confidential",
+          "location": "Security Official",
+          "refs": [
+            "164.308(a)(1)(ii)(A)"
+          ]
+        },
+        {
+          "name": "Training attendance records",
+          "type": "Record",
+          "category": "Primary asset",
+          "criticality": "Medium",
+          "classification": "Internal",
+          "location": "HR",
+          "refs": [
+            "164.308(a)(5)(i)"
+          ]
+        },
+        {
+          "name": "Access review records",
+          "type": "Record",
+          "category": "Primary asset",
+          "criticality": "Medium",
+          "classification": "Internal",
+          "location": "IT",
+          "refs": [
+            "164.308(a)(4)(ii)(C)"
+          ]
+        },
+        {
+          "name": "Audit log archive",
+          "type": "Record",
+          "category": "Primary asset",
+          "criticality": "High",
+          "classification": "Confidential",
+          "location": "IT",
+          "refs": [
+            "164.312(b)",
+            "164.316(b)(1)"
+          ]
+        },
+        {
+          "name": "Six-year documentation archive",
+          "type": "Record",
+          "category": "Primary asset",
+          "criticality": "High",
+          "classification": "Confidential",
+          "location": "Records",
+          "refs": [
+            "164.316(b)(2)(i)"
+          ]
+        },
+        {
+          "name": "Small-breach log for the year",
+          "type": "Record",
+          "category": "Primary asset",
+          "criticality": "High",
+          "classification": "Confidential",
+          "location": "Security Official",
+          "refs": [
+            "164.408"
+          ]
+        },
+        {
+          "name": "Media statement template",
+          "type": "Document",
+          "category": "Primary asset",
+          "criticality": "Low",
+          "classification": "Internal",
+          "location": "Communications",
+          "refs": [
+            "164.406"
+          ]
+        },
+        {
+          "name": "Law enforcement delay requests",
+          "type": "Record",
+          "category": "Primary asset",
+          "criticality": "Low",
+          "classification": "Confidential",
+          "location": "Security Official",
+          "refs": [
+            "164.412"
+          ]
+        },
+        {
+          "name": "Group health plan documents",
+          "type": "Document",
+          "category": "Primary asset",
+          "criticality": "Low",
+          "classification": "Confidential",
+          "location": "HR",
+          "refs": [
+            "164.314(b)(1)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "network",
+      "name": "Ways data leaves the building",
+      "items": [
+        {
+          "name": "Site-to-site link to a second clinic",
+          "type": "Network",
+          "category": "Supporting asset",
+          "criticality": "Medium",
+          "classification": "Restricted",
+          "location": "Between sites",
+          "refs": [
+            "164.312(e)(1)"
+          ]
+        },
+        {
+          "name": "Payer and clearinghouse connections",
+          "type": "Integration",
+          "category": "Supporting asset",
+          "criticality": "High",
+          "classification": "Restricted",
+          "location": "Vendor",
+          "refs": [
+            "164.312(e)(2)(i)"
+          ]
+        },
+        {
+          "name": "Secure file transfer to partners",
+          "type": "Service",
+          "category": "Supporting asset",
+          "criticality": "Medium",
+          "classification": "Restricted",
+          "location": "Cloud",
+          "refs": [
+            "164.312(e)(2)(ii)"
+          ]
+        },
+        {
+          "name": "Patient email and secure messaging",
+          "type": "Service",
+          "category": "Supporting asset",
+          "criticality": "Medium",
+          "classification": "Restricted",
+          "location": "Cloud",
+          "refs": [
+            "164.312(e)(2)(ii)"
+          ]
+        },
+        {
+          "name": "Remote support sessions",
+          "type": "Service",
+          "category": "Supporting asset",
+          "criticality": "Medium",
+          "classification": "Internal",
+          "location": "Vendor",
+          "refs": [
+            "164.312(d)"
+          ]
+        },
+        {
+          "name": "Removable media taken off site",
+          "type": "Media",
+          "category": "Supporting asset",
+          "criticality": "Medium",
+          "classification": "Restricted",
+          "location": "Mobile",
+          "refs": [
+            "164.310(d)(1)"
+          ]
+        },
+        {
+          "name": "Courier and post for paper records",
+          "type": "Service",
+          "category": "Supporting asset",
+          "criticality": "Low",
+          "classification": "Restricted",
+          "location": "Off site",
+          "refs": [
+            "164.310(d)(2)(iii)"
+          ]
+        }
+      ]
+    }
+  ],
+  "risks": [
+    {
+      "id": "top",
+      "name": "The ones that end up in the news",
+      "items": [
+        {
+          "title": "Ransomware encrypts clinical systems and the backups",
+          "description": "Ransomware spreads from a workstation to the servers and reaches the backups too, so care runs on paper for weeks and records may be unrecoverable. It is also treated as a breach unless you can show the data was not compromised.",
+          "category": "Security",
+          "likelihood": 4,
+          "impact": 5,
+          "treatment": "Mitigate",
+          "owner": "IT Manager",
+          "refs": [
+            "164.308(a)(7)(ii)(A)",
+            "164.308(a)(7)(ii)(B)",
+            "164.308(a)(5)(ii)(B)"
+          ]
+        },
+        {
+          "title": "Staff credentials taken by a phishing email",
+          "description": "A member of staff signs in to a convincing fake page, and the attacker reads a mailbox full of patient information or walks into the EHR.",
+          "category": "Security",
+          "likelihood": 4,
+          "impact": 5,
+          "treatment": "Mitigate",
+          "owner": "Security Official",
+          "refs": [
+            "164.308(a)(5)(i)",
+            "164.312(d)",
+            "164.308(a)(5)(ii)(C)"
+          ]
+        },
+        {
+          "title": "Unencrypted laptop lost or stolen",
+          "description": "A laptop holding patient data is taken from a car or left behind. Encrypted, it is usually not a reportable breach. Unencrypted, it is letters to every patient and a report to HHS.",
+          "category": "Security",
+          "likelihood": 3,
+          "impact": 5,
+          "treatment": "Mitigate",
+          "owner": "IT Manager",
+          "refs": [
+            "164.312(a)(2)(iv)",
+            "164.310(d)(2)(iii)"
+          ]
+        },
+        {
+          "title": "A vendor is breached and your patients are affected",
+          "description": "A billing company, transcription service or cloud provider is compromised. The data is yours, so the notification duty is largely yours too.",
+          "category": "Security",
+          "likelihood": 3,
+          "impact": 5,
+          "treatment": "Mitigate",
+          "owner": "Practice Manager",
+          "refs": [
+            "164.308(b)(1)",
+            "164.314(a)(1)",
+            "164.410"
+          ]
+        },
+        {
+          "title": "Staff member looks at records they have no business seeing",
+          "description": "A neighbour, a colleague, a celebrity or a family member is looked up out of curiosity. It is the most common insider incident in healthcare and it is always found late.",
+          "category": "Security",
+          "likelihood": 3,
+          "impact": 4,
+          "treatment": "Mitigate",
+          "owner": "Security Official",
+          "refs": [
+            "164.308(a)(1)(ii)(D)",
+            "164.312(b)",
+            "164.308(a)(1)(ii)(C)"
+          ]
+        },
+        {
+          "title": "Patient data sent to the wrong person",
+          "description": "An email, fax or letter goes to the wrong address, or a discharge summary is handed to the wrong patient. Small, frequent, and each one needs a breach assessment.",
+          "category": "Security",
+          "likelihood": 4,
+          "impact": 3,
+          "treatment": "Mitigate",
+          "owner": "Practice Manager",
+          "refs": [
+            "164.402",
+            "164.404"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "access",
+      "name": "Access and accounts",
+      "items": [
+        {
+          "title": "Shared logins at reception or a nursing station",
+          "description": "Several people use one account because it is quicker, so nothing in the audit log can be traced to a person and every other control weakens.",
+          "category": "Security",
+          "likelihood": 4,
+          "impact": 4,
+          "treatment": "Mitigate",
+          "owner": "IT Manager",
+          "refs": [
+            "164.312(a)(2)(i)"
+          ]
+        },
+        {
+          "title": "Leavers keep their access",
+          "description": "Someone leaves and their account stays live for weeks, along with remote access and a mailbox full of patient data.",
+          "category": "Security",
+          "likelihood": 3,
+          "impact": 4,
+          "treatment": "Mitigate",
+          "owner": "HR Manager",
+          "refs": [
+            "164.308(a)(3)(ii)(C)",
+            "164.308(a)(4)(ii)(C)"
+          ]
+        },
+        {
+          "title": "Everyone can see every patient",
+          "description": "Access was never set by role, so any member of staff can open any record in the system, including their own family's.",
+          "category": "Security",
+          "likelihood": 3,
+          "impact": 4,
+          "treatment": "Mitigate",
+          "owner": "Security Official",
+          "refs": [
+            "164.308(a)(4)(i)",
+            "164.312(a)(1)"
+          ]
+        },
+        {
+          "title": "Remote access with a password alone",
+          "description": "The VPN or remote desktop has no second factor, so one stolen password is enough to get inside the network.",
+          "category": "Security",
+          "likelihood": 3,
+          "impact": 5,
+          "treatment": "Mitigate",
+          "owner": "IT Manager",
+          "refs": [
+            "164.312(d)",
+            "164.308(a)(5)(ii)(D)"
+          ]
+        },
+        {
+          "title": "Break-glass access used as a shortcut",
+          "description": "The emergency account becomes the everyday account because it is easier, and nobody reviews when it was used.",
+          "category": "Security",
+          "likelihood": 2,
+          "impact": 4,
+          "treatment": "Mitigate",
+          "owner": "Security Official",
+          "refs": [
+            "164.312(a)(2)(ii)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "operations",
+      "name": "Day to day",
+      "items": [
+        {
+          "title": "Screens visible to patients and visitors",
+          "description": "Reception and nursing-station screens face the waiting area, and records are readable by anyone standing at the desk.",
+          "category": "Physical",
+          "likelihood": 4,
+          "impact": 3,
+          "treatment": "Mitigate",
+          "owner": "Practice Manager",
+          "refs": [
+            "164.310(c)",
+            "164.312(a)(2)(iii)"
+          ]
+        },
+        {
+          "title": "Paper records left where anyone can read them",
+          "description": "Charts on a counter, printouts left at the printer, downtime forms on a desk overnight.",
+          "category": "Physical",
+          "likelihood": 4,
+          "impact": 3,
+          "treatment": "Mitigate",
+          "owner": "Practice Manager",
+          "refs": [
+            "164.310(b)",
+            "164.310(a)(1)"
+          ]
+        },
+        {
+          "title": "Equipment disposed of with data still on it",
+          "description": "A workstation, drive or photocopier leaves the building without being wiped, and its hard disk still holds patient records.",
+          "category": "Security",
+          "likelihood": 2,
+          "impact": 5,
+          "treatment": "Mitigate",
+          "owner": "IT Manager",
+          "refs": [
+            "164.310(d)(2)(i)",
+            "164.310(d)(2)(ii)"
+          ]
+        },
+        {
+          "title": "Server room unlocked or shared with storage",
+          "description": "The comms cupboard is also where the cleaning supplies live, and the door is propped open in summer.",
+          "category": "Physical",
+          "likelihood": 3,
+          "impact": 4,
+          "treatment": "Mitigate",
+          "owner": "Facilities Manager",
+          "refs": [
+            "164.310(a)(1)",
+            "164.310(a)(2)(ii)"
+          ]
+        },
+        {
+          "title": "Backups never restored",
+          "description": "Backups run and report success, but nobody has ever restored one, and the day it matters the restore fails or takes days.",
+          "category": "Operational",
+          "likelihood": 3,
+          "impact": 5,
+          "treatment": "Mitigate",
+          "owner": "IT Manager",
+          "refs": [
+            "164.308(a)(7)(ii)(D)"
+          ]
+        },
+        {
+          "title": "Nobody watching the logs",
+          "description": "Audit logging is on, but no one reviews it, so unusual access is only found when a patient complains.",
+          "category": "Security",
+          "likelihood": 4,
+          "impact": 3,
+          "treatment": "Mitigate",
+          "owner": "Security Official",
+          "refs": [
+            "164.308(a)(1)(ii)(D)",
+            "164.312(b)"
+          ]
+        },
+        {
+          "title": "Systems nobody knows about",
+          "description": "A department buys a scheduling app or a cloud form service on a card, and patient data sits outside every control and every agreement.",
+          "category": "Operational",
+          "likelihood": 3,
+          "impact": 4,
+          "treatment": "Mitigate",
+          "owner": "Practice Manager",
+          "refs": [
+            "164.308(a)(1)(ii)(A)",
+            "164.308(b)(1)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "compliance",
+      "name": "Compliance and paperwork",
+      "items": [
+        {
+          "title": "The risk analysis is out of date or was never done",
+          "description": "The only risk analysis was done years ago, before the move to the cloud and the new EHR. It is the first thing OCR asks for.",
+          "category": "Compliance",
+          "likelihood": 4,
+          "impact": 5,
+          "treatment": "Mitigate",
+          "owner": "Security Official",
+          "refs": [
+            "164.308(a)(1)(ii)(A)",
+            "164.308(a)(8)"
+          ]
+        },
+        {
+          "title": "A vendor handling patient data has no signed agreement",
+          "description": "Someone touches ePHI on nothing more than an invoice - often IT support, a shredding company or a small software supplier.",
+          "category": "Compliance",
+          "likelihood": 3,
+          "impact": 4,
+          "treatment": "Mitigate",
+          "owner": "Practice Manager",
+          "refs": [
+            "164.308(b)(1)",
+            "164.314(a)(2)(i)"
+          ]
+        },
+        {
+          "title": "Breach deadline missed",
+          "description": "An incident is not recognised as a breach until weeks later, and the 60 days from discovery have gone. Discovery is when any employee should have known, not when management was told.",
+          "category": "Compliance",
+          "likelihood": 2,
+          "impact": 5,
+          "treatment": "Mitigate",
+          "owner": "Security Official",
+          "refs": [
+            "164.404",
+            "164.408",
+            "164.414"
+          ]
+        },
+        {
+          "title": "The small-breach annual report is forgotten",
+          "description": "Breaches under 500 people are logged during the year and never submitted to HHS in the 60 days after it ends.",
+          "category": "Compliance",
+          "likelihood": 3,
+          "impact": 3,
+          "treatment": "Mitigate",
+          "owner": "Security Official",
+          "refs": [
+            "164.408"
+          ]
+        },
+        {
+          "title": "Policies are a template with someone else's name in it",
+          "description": "The policy set was bought or copied and never adapted, and describes systems and roles the organisation does not have.",
+          "category": "Compliance",
+          "likelihood": 3,
+          "impact": 4,
+          "treatment": "Mitigate",
+          "owner": "Security Official",
+          "refs": [
+            "164.316(a)"
+          ]
+        },
+        {
+          "title": "Training records missing for clinicians and managers",
+          "description": "Front-desk staff are trained and recorded; the doctors and the partners are not, and they are the ones with the widest access.",
+          "category": "Compliance",
+          "likelihood": 3,
+          "impact": 4,
+          "treatment": "Mitigate",
+          "owner": "HR Manager",
+          "refs": [
+            "164.308(a)(5)(i)"
+          ]
+        },
+        {
+          "title": "Records deleted before six years",
+          "description": "Logs rotate away after 90 days and old policy versions are overwritten, so the evidence of what you did is gone before the retention period ends.",
+          "category": "Compliance",
+          "likelihood": 3,
+          "impact": 3,
+          "treatment": "Mitigate",
+          "owner": "IT Manager",
+          "refs": [
+            "164.316(b)(2)(i)"
+          ]
+        },
+        {
+          "title": "No named Security Official, or the named one has left",
+          "description": "The appointment was made once and never revisited, so accountability sits with nobody.",
+          "category": "Compliance",
+          "likelihood": 2,
+          "impact": 4,
+          "treatment": "Mitigate",
+          "owner": "Practice Owner",
+          "refs": [
+            "164.308(a)(2)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "programme",
+      "name": "The programme itself",
+      "items": [
+        {
+          "title": "No one owns security, so nothing moves",
+          "description": "Security is nobody's named job. Work is started, nothing is finished, and the risk analysis is a document from two years ago.",
+          "category": "Strategic",
+          "likelihood": 3,
+          "impact": 4,
+          "treatment": "Mitigate",
+          "owner": "Practice Owner",
+          "refs": [
+            "164.308(a)(1)(i)",
+            "164.308(a)(2)"
+          ]
+        },
+        {
+          "title": "Joiners get access before anyone checks them",
+          "description": "Somebody starts on Monday with a full account and no screening, reference or signed acknowledgement of the rules.",
+          "category": "Security",
+          "likelihood": 3,
+          "impact": 4,
+          "treatment": "Mitigate",
+          "owner": "HR Manager",
+          "refs": [
+            "164.308(a)(3)(i)",
+            "164.308(a)(3)(ii)(B)"
+          ]
+        },
+        {
+          "title": "Nobody knows what to do when something happens",
+          "description": "An incident is noticed at the front desk and reaches management three weeks later, by which time the 60-day clock is half gone.",
+          "category": "Operational",
+          "likelihood": 3,
+          "impact": 5,
+          "treatment": "Mitigate",
+          "owner": "Security Official",
+          "refs": [
+            "164.308(a)(6)(i)",
+            "164.308(a)(6)(ii)"
+          ]
+        },
+        {
+          "title": "No plan for running without the systems",
+          "description": "The EHR is down for a day and there are no paper forms, no downtime procedure and no agreed way to record care given.",
+          "category": "Operational",
+          "likelihood": 3,
+          "impact": 4,
+          "treatment": "Mitigate",
+          "owner": "Practice Manager",
+          "refs": [
+            "164.308(a)(7)(i)",
+            "164.308(a)(7)(ii)(C)"
+          ]
+        },
+        {
+          "title": "Documentation cannot be produced when asked",
+          "description": "The work was done, but the training records, access reviews and risk analyses cannot be found six years later.",
+          "category": "Compliance",
+          "likelihood": 3,
+          "impact": 4,
+          "treatment": "Mitigate",
+          "owner": "Security Official",
+          "refs": [
+            "164.316(b)(1)",
+            "164.316(b)(2)(i)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "name": "Data in motion and at rest",
+      "items": [
+        {
+          "title": "Patient data sent over an unprotected route",
+          "description": "Records go out by plain email, an old fax-to-email path or an interface still running without encryption.",
+          "category": "Security",
+          "likelihood": 3,
+          "impact": 4,
+          "treatment": "Mitigate",
+          "owner": "IT Manager",
+          "refs": [
+            "164.312(e)(1)",
+            "164.312(e)(2)(ii)"
+          ]
+        },
+        {
+          "title": "Records changed with no trace of who did it",
+          "description": "Entries can be altered or deleted without an amendment history, so a dispute cannot be settled from the record.",
+          "category": "Security",
+          "likelihood": 2,
+          "impact": 4,
+          "treatment": "Mitigate",
+          "owner": "IT Manager",
+          "refs": [
+            "164.312(c)(1)",
+            "164.312(c)(2)"
+          ]
+        },
+        {
+          "title": "Equipment leaves without being accounted for",
+          "description": "Laptops, drives and media move between sites, staff and repairers with no register, so nobody can say where patient data is.",
+          "category": "Security",
+          "likelihood": 3,
+          "impact": 4,
+          "treatment": "Mitigate",
+          "owner": "IT Manager",
+          "refs": [
+            "164.310(d)(1)",
+            "164.310(d)(2)(iii)"
+          ]
+        },
+        {
+          "title": "A backup cannot be restored when it matters",
+          "description": "Backups report success for months. The first real restore attempt is during an outage, and it fails or takes days.",
+          "category": "Operational",
+          "likelihood": 3,
+          "impact": 5,
+          "treatment": "Mitigate",
+          "owner": "IT Manager",
+          "refs": [
+            "164.308(a)(7)(ii)(A)",
+            "164.308(a)(7)(ii)(D)"
+          ]
+        },
+        {
+          "title": "Data copied into a system nobody approved",
+          "description": "A spreadsheet of patients is exported to a personal drive or a free online tool to get a job done quickly.",
+          "category": "Security",
+          "likelihood": 3,
+          "impact": 4,
+          "treatment": "Mitigate",
+          "owner": "Practice Manager",
+          "refs": [
+            "164.310(b)",
+            "164.312(a)(1)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "notification",
+      "name": "When it has to be told",
+      "items": [
+        {
+          "title": "A large breach handled without telling the media",
+          "description": "More than 500 people in one state are affected, the individuals are written to, and the media notice is never issued.",
+          "category": "Compliance",
+          "likelihood": 2,
+          "impact": 4,
+          "treatment": "Mitigate",
+          "owner": "Security Official",
+          "refs": [
+            "164.406"
+          ]
+        },
+        {
+          "title": "Notification delayed on a verbal police request",
+          "description": "Law enforcement asks for a delay by phone, nothing is written down, and the deadline passes with no record of why.",
+          "category": "Compliance",
+          "likelihood": 2,
+          "impact": 4,
+          "treatment": "Mitigate",
+          "owner": "Security Official",
+          "refs": [
+            "164.412"
+          ]
+        },
+        {
+          "title": "A vendor tells you late, or not at all",
+          "description": "A business associate discovers a breach and reports it near the end of its own 60 days, leaving you no time to notify.",
+          "category": "Compliance",
+          "likelihood": 3,
+          "impact": 5,
+          "treatment": "Mitigate",
+          "owner": "Practice Manager",
+          "refs": [
+            "164.410",
+            "164.314(a)(2)(i)"
+          ]
+        },
+        {
+          "title": "Group health plan data used for employment decisions",
+          "description": "Plan information reaches the employer side of the organisation, and the separation required in the plan documents exists only on paper.",
+          "category": "Compliance",
+          "likelihood": 2,
+          "impact": 4,
+          "treatment": "Mitigate",
+          "owner": "HR Manager",
+          "refs": [
+            "164.314(b)(1)",
+            "164.314(b)(2)"
+          ]
+        }
+      ]
+    }
+  ]
+}

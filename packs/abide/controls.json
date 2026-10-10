@@ -1,0 +1,434 @@
+[
+  {
+    "ref": "164.308(a)(1)(i)",
+    "title": "Security management process",
+    "theme": "ADM",
+    "parentRef": null
+  },
+  {
+    "ref": "164.308(a)(1)(ii)(A)",
+    "title": "Risk analysis",
+    "theme": "ADM",
+    "parentRef": "164.308(a)(1)(i)"
+  },
+  {
+    "ref": "164.308(a)(1)(ii)(B)",
+    "title": "Risk management",
+    "theme": "ADM",
+    "parentRef": "164.308(a)(1)(i)"
+  },
+  {
+    "ref": "164.308(a)(1)(ii)(C)",
+    "title": "Sanction policy",
+    "theme": "ADM",
+    "parentRef": "164.308(a)(1)(i)"
+  },
+  {
+    "ref": "164.308(a)(1)(ii)(D)",
+    "title": "Information system activity review",
+    "theme": "ADM",
+    "parentRef": "164.308(a)(1)(i)"
+  },
+  {
+    "ref": "164.308(a)(2)",
+    "title": "Assigned security responsibility",
+    "theme": "ADM",
+    "parentRef": null
+  },
+  {
+    "ref": "164.308(a)(3)(i)",
+    "title": "Workforce security",
+    "theme": "ADM",
+    "parentRef": null
+  },
+  {
+    "ref": "164.308(a)(3)(ii)(A)",
+    "title": "Authorization and/or supervision",
+    "theme": "ADM",
+    "parentRef": "164.308(a)(3)(i)"
+  },
+  {
+    "ref": "164.308(a)(3)(ii)(B)",
+    "title": "Workforce clearance procedure",
+    "theme": "ADM",
+    "parentRef": "164.308(a)(3)(i)"
+  },
+  {
+    "ref": "164.308(a)(3)(ii)(C)",
+    "title": "Termination procedures",
+    "theme": "ADM",
+    "parentRef": "164.308(a)(3)(i)"
+  },
+  {
+    "ref": "164.308(a)(4)(i)",
+    "title": "Information access management",
+    "theme": "ADM",
+    "parentRef": null
+  },
+  {
+    "ref": "164.308(a)(4)(ii)(A)",
+    "title": "Isolating health care clearinghouse functions",
+    "theme": "ADM",
+    "parentRef": "164.308(a)(4)(i)"
+  },
+  {
+    "ref": "164.308(a)(4)(ii)(B)",
+    "title": "Access authorization",
+    "theme": "ADM",
+    "parentRef": "164.308(a)(4)(i)"
+  },
+  {
+    "ref": "164.308(a)(4)(ii)(C)",
+    "title": "Access establishment and modification",
+    "theme": "ADM",
+    "parentRef": "164.308(a)(4)(i)"
+  },
+  {
+    "ref": "164.308(a)(5)(i)",
+    "title": "Security awareness and training",
+    "theme": "ADM",
+    "parentRef": null
+  },
+  {
+    "ref": "164.308(a)(5)(ii)(A)",
+    "title": "Security reminders",
+    "theme": "ADM",
+    "parentRef": "164.308(a)(5)(i)"
+  },
+  {
+    "ref": "164.308(a)(5)(ii)(B)",
+    "title": "Protection from malicious software",
+    "theme": "ADM",
+    "parentRef": "164.308(a)(5)(i)"
+  },
+  {
+    "ref": "164.308(a)(5)(ii)(C)",
+    "title": "Log-in monitoring",
+    "theme": "ADM",
+    "parentRef": "164.308(a)(5)(i)"
+  },
+  {
+    "ref": "164.308(a)(5)(ii)(D)",
+    "title": "Password management",
+    "theme": "ADM",
+    "parentRef": "164.308(a)(5)(i)"
+  },
+  {
+    "ref": "164.308(a)(6)(i)",
+    "title": "Security incident procedures",
+    "theme": "ADM",
+    "parentRef": null
+  },
+  {
+    "ref": "164.308(a)(6)(ii)",
+    "title": "Response and reporting",
+    "theme": "ADM",
+    "parentRef": "164.308(a)(6)(i)"
+  },
+  {
+    "ref": "164.308(a)(7)(i)",
+    "title": "Contingency plan",
+    "theme": "ADM",
+    "parentRef": null
+  },
+  {
+    "ref": "164.308(a)(7)(ii)(A)",
+    "title": "Data backup plan",
+    "theme": "ADM",
+    "parentRef": "164.308(a)(7)(i)"
+  },
+  {
+    "ref": "164.308(a)(7)(ii)(B)",
+    "title": "Disaster recovery plan",
+    "theme": "ADM",
+    "parentRef": "164.308(a)(7)(i)"
+  },
+  {
+    "ref": "164.308(a)(7)(ii)(C)",
+    "title": "Emergency mode operation plan",
+    "theme": "ADM",
+    "parentRef": "164.308(a)(7)(i)"
+  },
+  {
+    "ref": "164.308(a)(7)(ii)(D)",
+    "title": "Testing and revision procedures",
+    "theme": "ADM",
+    "parentRef": "164.308(a)(7)(i)"
+  },
+  {
+    "ref": "164.308(a)(7)(ii)(E)",
+    "title": "Applications and data criticality analysis",
+    "theme": "ADM",
+    "parentRef": "164.308(a)(7)(i)"
+  },
+  {
+    "ref": "164.308(a)(8)",
+    "title": "Evaluation",
+    "theme": "ADM",
+    "parentRef": null
+  },
+  {
+    "ref": "164.308(b)(1)",
+    "title": "Business associate contracts and other arrangements",
+    "theme": "ADM",
+    "parentRef": null
+  },
+  {
+    "ref": "164.308(b)(3)",
+    "title": "Written contract or other arrangement",
+    "theme": "ADM",
+    "parentRef": "164.308(b)(1)"
+  },
+  {
+    "ref": "164.310(a)(1)",
+    "title": "Facility access controls",
+    "theme": "PHY",
+    "parentRef": null
+  },
+  {
+    "ref": "164.310(a)(2)(i)",
+    "title": "Contingency operations",
+    "theme": "PHY",
+    "parentRef": "164.310(a)(1)"
+  },
+  {
+    "ref": "164.310(a)(2)(ii)",
+    "title": "Facility security plan",
+    "theme": "PHY",
+    "parentRef": "164.310(a)(1)"
+  },
+  {
+    "ref": "164.310(a)(2)(iii)",
+    "title": "Access control and validation procedures",
+    "theme": "PHY",
+    "parentRef": "164.310(a)(1)"
+  },
+  {
+    "ref": "164.310(a)(2)(iv)",
+    "title": "Maintenance records",
+    "theme": "PHY",
+    "parentRef": "164.310(a)(1)"
+  },
+  {
+    "ref": "164.310(b)",
+    "title": "Workstation use",
+    "theme": "PHY",
+    "parentRef": null
+  },
+  {
+    "ref": "164.310(c)",
+    "title": "Workstation security",
+    "theme": "PHY",
+    "parentRef": null
+  },
+  {
+    "ref": "164.310(d)(1)",
+    "title": "Device and media controls",
+    "theme": "PHY",
+    "parentRef": null
+  },
+  {
+    "ref": "164.310(d)(2)(i)",
+    "title": "Disposal",
+    "theme": "PHY",
+    "parentRef": "164.310(d)(1)"
+  },
+  {
+    "ref": "164.310(d)(2)(ii)",
+    "title": "Media re-use",
+    "theme": "PHY",
+    "parentRef": "164.310(d)(1)"
+  },
+  {
+    "ref": "164.310(d)(2)(iii)",
+    "title": "Accountability",
+    "theme": "PHY",
+    "parentRef": "164.310(d)(1)"
+  },
+  {
+    "ref": "164.310(d)(2)(iv)",
+    "title": "Data backup and storage",
+    "theme": "PHY",
+    "parentRef": "164.310(d)(1)"
+  },
+  {
+    "ref": "164.312(a)(1)",
+    "title": "Access control",
+    "theme": "TEC",
+    "parentRef": null
+  },
+  {
+    "ref": "164.312(a)(2)(i)",
+    "title": "Unique user identification",
+    "theme": "TEC",
+    "parentRef": "164.312(a)(1)"
+  },
+  {
+    "ref": "164.312(a)(2)(ii)",
+    "title": "Emergency access procedure",
+    "theme": "TEC",
+    "parentRef": "164.312(a)(1)"
+  },
+  {
+    "ref": "164.312(a)(2)(iii)",
+    "title": "Automatic logoff",
+    "theme": "TEC",
+    "parentRef": "164.312(a)(1)"
+  },
+  {
+    "ref": "164.312(a)(2)(iv)",
+    "title": "Encryption and decryption",
+    "theme": "TEC",
+    "parentRef": "164.312(a)(1)"
+  },
+  {
+    "ref": "164.312(b)",
+    "title": "Audit controls",
+    "theme": "TEC",
+    "parentRef": null
+  },
+  {
+    "ref": "164.312(c)(1)",
+    "title": "Integrity",
+    "theme": "TEC",
+    "parentRef": null
+  },
+  {
+    "ref": "164.312(c)(2)",
+    "title": "Mechanism to authenticate ePHI",
+    "theme": "TEC",
+    "parentRef": "164.312(c)(1)"
+  },
+  {
+    "ref": "164.312(d)",
+    "title": "Person or entity authentication",
+    "theme": "TEC",
+    "parentRef": null
+  },
+  {
+    "ref": "164.312(e)(1)",
+    "title": "Transmission security",
+    "theme": "TEC",
+    "parentRef": null
+  },
+  {
+    "ref": "164.312(e)(2)(i)",
+    "title": "Integrity controls",
+    "theme": "TEC",
+    "parentRef": "164.312(e)(1)"
+  },
+  {
+    "ref": "164.312(e)(2)(ii)",
+    "title": "Encryption",
+    "theme": "TEC",
+    "parentRef": "164.312(e)(1)"
+  },
+  {
+    "ref": "164.314(a)(1)",
+    "title": "Business associate contracts or other arrangements",
+    "theme": "ORG",
+    "parentRef": null
+  },
+  {
+    "ref": "164.314(a)(2)(i)",
+    "title": "Business associate contracts",
+    "theme": "ORG",
+    "parentRef": "164.314(a)(1)"
+  },
+  {
+    "ref": "164.314(a)(2)(ii)",
+    "title": "Other arrangements",
+    "theme": "ORG",
+    "parentRef": "164.314(a)(1)"
+  },
+  {
+    "ref": "164.314(a)(2)(iii)",
+    "title": "Business associate contracts with subcontractors",
+    "theme": "ORG",
+    "parentRef": "164.314(a)(1)"
+  },
+  {
+    "ref": "164.314(b)(1)",
+    "title": "Requirements for group health plans",
+    "theme": "ORG",
+    "parentRef": null
+  },
+  {
+    "ref": "164.314(b)(2)",
+    "title": "Implementation specifications for plan sponsors",
+    "theme": "ORG",
+    "parentRef": "164.314(b)(1)"
+  },
+  {
+    "ref": "164.316(a)",
+    "title": "Policies and procedures",
+    "theme": "DOC",
+    "parentRef": null
+  },
+  {
+    "ref": "164.316(b)(1)",
+    "title": "Documentation",
+    "theme": "DOC",
+    "parentRef": null
+  },
+  {
+    "ref": "164.316(b)(2)(i)",
+    "title": "Time limit",
+    "theme": "DOC",
+    "parentRef": "164.316(b)(1)"
+  },
+  {
+    "ref": "164.316(b)(2)(ii)",
+    "title": "Availability",
+    "theme": "DOC",
+    "parentRef": "164.316(b)(1)"
+  },
+  {
+    "ref": "164.316(b)(2)(iii)",
+    "title": "Updates",
+    "theme": "DOC",
+    "parentRef": "164.316(b)(1)"
+  },
+  {
+    "ref": "164.402",
+    "title": "What counts as a breach",
+    "theme": "BRE",
+    "parentRef": null
+  },
+  {
+    "ref": "164.404",
+    "title": "Notice to the individuals affected",
+    "theme": "BRE",
+    "parentRef": null
+  },
+  {
+    "ref": "164.406",
+    "title": "Notice to the media",
+    "theme": "BRE",
+    "parentRef": null
+  },
+  {
+    "ref": "164.408",
+    "title": "Notice to the Secretary of HHS",
+    "theme": "BRE",
+    "parentRef": null
+  },
+  {
+    "ref": "164.410",
+    "title": "Notice by a business associate",
+    "theme": "BRE",
+    "parentRef": null
+  },
+  {
+    "ref": "164.412",
+    "title": "Law enforcement delay",
+    "theme": "BRE",
+    "parentRef": null
+  },
+  {
+    "ref": "164.414",
+    "title": "Administrative requirements and burden of proof",
+    "theme": "BRE",
+    "parentRef": null
+  }
+]

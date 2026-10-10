@@ -1,0 +1,122 @@
+{
+  "note": "Everything here ships with the product. Nothing is downloaded, and nothing you read here leaves this machine. None of it is legal advice: HIPAA is enforced case by case, and where the stakes are high, ask a lawyer who does this for a living.",
+  "help": [
+    {
+      "file": "first-hour.md",
+      "title": "Your first hour",
+      "about": "What to do straight after installing, in order."
+    },
+    {
+      "file": "what-each-screen-is-for.md",
+      "title": "What each screen is for",
+      "about": "One line on every item in the menu."
+    },
+    {
+      "file": "who-can-do-what.md",
+      "title": "Who can do what",
+      "about": "The four roles, and which one to give someone."
+    },
+    {
+      "file": "where-your-data-lives.md",
+      "title": "Where your data lives",
+      "about": "What is stored, where, and how to back it up."
+    },
+    {
+      "file": "common-questions.md",
+      "title": "Common questions",
+      "about": "The things people ask in the first week."
+    }
+  ],
+  "guides": [
+    {
+      "file": "quick-start.md",
+      "title": "Quick start",
+      "about": "Fifteen minutes from a fresh install to knowing what to do next.",
+      "group": "Using the product"
+    },
+    {
+      "file": "hipaa-playbook.md",
+      "title": "Getting ready, in order",
+      "about": "The whole programme, from the risk analysis outwards.",
+      "group": "Using the product"
+    },
+    {
+      "file": "breach-day-one.md",
+      "title": "The first day of a suspected breach",
+      "about": "What to do, in what order, and what the clock actually is.",
+      "group": "Using the product"
+    },
+    {
+      "file": "using-it.md",
+      "title": "Using it day to day",
+      "about": "The habits that keep this true between reviews.",
+      "group": "Using the product"
+    },
+    {
+      "file": "administrator-guide.md",
+      "title": "Administrator guide",
+      "about": "Users, email, backups and the update button.",
+      "group": "Using the product"
+    },
+    {
+      "file": "hipaa-01-how-compliance-is-checked.md",
+      "title": "How HIPAA compliance is checked",
+      "about": "No certificate, who the rules cover, required and addressable, OCR, and the proposed update.",
+      "group": "Getting audit-ready"
+    },
+    {
+      "file": "hipaa-02-general-rules.md",
+      "title": "The general rules (164.302-306)",
+      "about": "Who it applies to, the key definitions, flexibility, and how addressable decisions work.",
+      "group": "Getting audit-ready"
+    },
+    {
+      "file": "hipaa-03-administrative.md",
+      "title": "Administrative safeguards (164.308)",
+      "about": "All 30 requirements: risk analysis, workforce, access, training, incidents, contingency, vendors.",
+      "group": "Getting audit-ready"
+    },
+    {
+      "file": "hipaa-04-physical.md",
+      "title": "Physical safeguards (164.310)",
+      "about": "All 12 requirements: facilities, workstations, devices and media.",
+      "group": "Getting audit-ready"
+    },
+    {
+      "file": "hipaa-05-technical.md",
+      "title": "Technical safeguards (164.312)",
+      "about": "All 12 requirements: accounts, encryption, audit logs, integrity, authentication, transmission.",
+      "group": "Getting audit-ready"
+    },
+    {
+      "file": "hipaa-06-organisational.md",
+      "title": "Organisational requirements (164.314)",
+      "about": "What business associate agreements and group health plan documents must say.",
+      "group": "Getting audit-ready"
+    },
+    {
+      "file": "hipaa-07-documentation.md",
+      "title": "Policies and documentation (164.316)",
+      "about": "Writing it down, keeping it six years, making it available, and reviewing it.",
+      "group": "Getting audit-ready"
+    },
+    {
+      "file": "hipaa-08-breach-notification.md",
+      "title": "Breach notification (164.400-414)",
+      "about": "What counts as a breach, the exceptions, who to tell, and the deadlines.",
+      "group": "Getting audit-ready"
+    },
+    {
+      "file": "hipaa-09-required-documents.md",
+      "title": "Required documents and records",
+      "about": "Every policy to write and record to keep, the breach records, and retention.",
+      "group": "Getting audit-ready"
+    },
+    {
+      "file": "hipaa-10-ocr-ready.md",
+      "title": "Being ready for OCR",
+      "about": "What OCR asks for, the readiness checklist, common findings, and answering a letter.",
+      "group": "Getting audit-ready"
+    }
+  ]
+}
