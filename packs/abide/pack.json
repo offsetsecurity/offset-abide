@@ -20,7 +20,58 @@
     "help": true,
     "gapAnalysis": true,
     "demoData": true,
-    "csv": true
+    "csv": true,
+    "readiness": true
+  },
+  "readiness": {
+    "auditor": "HIPAA auditor",
+    "auditorShort": "auditor",
+    "finding": "finding",
+    "findings": "findings",
+    "keyDate": "compliance review",
+    "ledBy": "Reviewed by",
+    "refs": {
+      "policy": "164.316(a)",
+      "finding": "164.308(a)(1)(ii)(B)",
+      "vendor": "164.308(b)(1)",
+      "audit": "164.308(a)(8)",
+      "review": "164.316(b)(2)(iii)",
+      "risk": "164.308(a)(1)(ii)(A)"
+    }
+  },
+  "auditorView": {
+    "heading": "HIPAA compliance review",
+    "none": "No compliance review booked yet",
+    "groups": {
+      "system": "Scope and risk analysis",
+      "controls": "Safeguards and evidence",
+      "run": "How it is run"
+    },
+    "kpis": {
+      "inPlace": "Requirements in place",
+      "inPlaceTip": "Requirements that apply and are in place.",
+      "withEvidence": "Requirements with evidence",
+      "withEvidenceTip": "Requirements in place that have something attached to prove them.",
+      "findingsTip": "Findings not yet closed."
+    },
+    "steps": {
+      "scope": { "title": "Scope: where ePHI is", "route": "policies", "tip": "§164.306(a)", "detail": "Which systems, places and people create, receive, keep or send ePHI." },
+      "parties": { "hide": true },
+      "method": { "title": "Risk analysis method", "route": "policies", "tip": "§164.308(a)(1)(ii)(A)", "detail": "How risks to ePHI are found, scored and accepted, and who decides." },
+      "soa": { "title": "Required and addressable decisions", "tip": "§164.306(d)", "detail": "Every requirement, whether it applies, and for each addressable one the decision and its reason." },
+      "controls": { "title": "Safeguards in place", "tip": "§164.308 to §164.316", "detail": "The administrative, physical and technical safeguards in scope, and how many are in place." },
+      "evidence": { "tip": "§164.316(b)(1)", "detail": "Evidence kept with its date and who owns it. Keep it for six years." },
+      "gaps": { "title": "Requirements with nothing to prove them", "tip": "§164.316(b)(1)", "detail": "Requirements marked in place that have nothing attached to prove it." },
+      "findings": { "tip": "§164.308(a)(1)(ii)(B)", "detail": "Findings raised, and what closed each one." },
+      "policies": { "tip": "§164.316(a)" },
+      "risks": { "title": "Risk analysis and management", "tip": "§164.308(a)(1)(ii)(A) and (B)" },
+      "objectives": { "hide": true },
+      "training": { "title": "Security awareness and training", "tip": "§164.308(a)(5)" },
+      "suppliers": { "title": "Business associates", "tip": "§164.308(b)(1), §164.314(a)", "detail": "Who handles ePHI for you, and the agreement each one signed." },
+      "internal": { "title": "Evaluation", "tip": "§164.308(a)(8)", "detail": "A periodic check that your safeguards still meet the Security Rule." },
+      "review": { "title": "Documentation review", "tip": "§164.316(b)(2)(iii)", "detail": "Policies and procedures reviewed, and updated when something changed." },
+      "trail": { "tip": "§164.312(b)" }
+    }
   },
   "counts": {
     "themes": 6,

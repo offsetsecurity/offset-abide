@@ -20,6 +20,11 @@ Every release is numbered x.y.z, for example 1.4.2:
 ### Changed
 - **Offset Abide is now open source,** under the Apache License 2.0. It is still
   free. You may use, change and share it. See `LICENSE`.
+- **The same look as every Offset product.** New menu, top bar, account menu,
+  Ctrl K to jump to any screen, new windows and sign-in. "Get ready" is now
+  called **Plan**, with a "Run a mock audit" button at the top of the auditor
+  card. Settings opens on an Overview of every section, with a tab for each.
+  A new **Auditor view** walks an auditor through your records in HIPAA order.
 
 ### Fixed (0.2.34)
 - **Docker: uploaded evidence files survive updates.** The image never told the

@@ -73,7 +73,10 @@ async function build() {
       .find((f) => f?.endsWith(".js")) ?? "app.js";
 
   const template = await readFile(resolve(root, "src/core/index.html"), "utf8");
+  // The global UI (the Global Offset Design): inlined after the screen styles, so its tokens and components win.
+  const theme = await readFile(resolve(root, "src/core/theme.css"), "utf8");
   const html = template
+    .replace("/*{{THEME_CSS}}*/", () => theme)
     .replaceAll("{{BUNDLE}}", jsFile)
     .replaceAll("{{PRODUCT_NAME}}", pack.product)
     .replaceAll("{{EDITION}}", pack.edition)
